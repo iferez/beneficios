@@ -1,0 +1,2275 @@
+/* 16-oct-2020 */
+
+/* Fin nueva home de personas y selecta */
+
+.mc-seg-benefit .col-md-4,
+.mc-seg-benefit .col-md-6 {
+    padding: 0;
+    padding-top: 15px !important;
+
+}@media (min-width: 1200px) {
+    .mc-seg-benefit .col-md-4,
+.mc-seg-benefit .col-md-6 {
+    padding: 0;
+    padding-right: 15px;
+    padding-top: 15px !important;
+    } 
+}
+
+
+body .mc-main-content-container .mc-main-content .bg-color-9 .mc-main-banner .container .mc-search-box-container {
+    width: 100%
+}
+
+
+.module-x3-padding {
+  padding-top: 15px;
+  /*padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;*/
+}
+@media (min-width: 1200px) {
+    .module-x3-padding {
+  padding-top: 35px;
+  /*padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;*/
+    } 
+}
+
+.module-padding {
+    padding-top: 15px;
+  /*padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;*/
+}
+@media (min-width: 1200px) {
+    .module-padding {
+        padding-top: 35px;
+  /*padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;*/
+    } 
+}
+
+/* Fin nueva home de personas y selecta */
+
+/*(07/08/2019)*/
+
+
+/* Include chatbotHome */
+
+
+/* Begin Generics */
+
+.padding-top50px {
+    padding-top: 50px;
+}
+
+.padding-bottom70px {
+    padding-bottom: 70px !important;
+}
+
+
+/* End Generics */
+
+
+/* tabs transparentes para  mc-accountant-manager */
+
+.mc-accountant-manager .mc-field-wrapper .nav-tabs .nav-link {
+    background-color: transparent;
+}
+
+
+/* Simulador prestamo personal */
+
+.mc-prestamo-personal.mc-detalle-producto .modal-backdrop,
+.prestamo-personal.mc-detalle-producto .modal-backdrop {
+    background: linear-gradient(to bottom, #0193cf 0%, rgba(1, 147, 207, 0.99) 2%, rgba(1, 147, 207, 0.9) 100%);
+}
+
+
+/* field errors */
+
+.mc-field-wrapper .input-group .input-group-addon.error,
+.mc-form-elements .input-group .input-group-addon.error {
+    background-color: #cc2229;
+    border-color: #cc2229;
+    border: 1px solid #cc2229;
+}
+
+.mc-field-wrapper .input-group input.error,
+.mc-form-elements .input-group input.error {
+    border-color: #cc2229;
+}
+
+
+/* Inicio .mc-selecta */
+
+.mc-selecta .primary-btn,
+.mc-selecta #chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a,
+#chat_container.macro-chatbot .messenger-frame .frame-footer .send_message .mc-selecta a,
+.mc-selecta .btn-orange:not(.btn-circle):not(.second-btn),
+.mc-selecta #chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a:not(.btn-circle):not(.second-btn),
+#chat_container.macro-chatbot .messenger-frame .frame-footer .send_message .mc-selecta a:not(.btn-circle):not(.second-btn) {
+    background-color: #9e3034 !important;
+    border: 2px solid transparent;
+}
+
+.mc-selecta .primary-btn:hover,
+.mc-selecta #chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a:hover,
+#chat_container.macro-chatbot .messenger-frame .frame-footer .send_message .mc-selecta a:hover,
+.mc-selecta .btn-orange:not(.btn-circle):not(.second-btn):hover,
+.mc-selecta #chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a:not(.btn-circle):not(.second-btn):hover,
+#chat_container.macro-chatbot .messenger-frame .frame-footer .send_message .mc-selecta a:not(.btn-circle):not(.second-btn):hover {
+    background-color: #7f292c !important;
+}
+
+.mc-selecta .btn.btn-orange.second-btn:before,
+.mc-selecta .btn.btn-orange:before,
+.radial-out-orange:before {
+    background: #9e3034 !important;
+}
+
+.mc-selecta .btn.btn-orange:not(.btn-circle):hover:before,
+.mc-selecta #chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a:not(.btn-circle):hover:before,
+.mc-selecta #chat_container.macro-chatbot .messenger-frame .frame-footer .send_message .mc-selecta a:not(.btn-circle):hover:before,
+.mc-selecta .mc-eventos-personas .mc-product-main-cta:hover:before {
+    background: #80292c !important;
+    transform: scale(1);
+    border-radius: 20px;
+}
+
+
+/* Fin .mc-selecta */
+
+
+/* INICIO - redondeo de cajas en prestamo-automotor */
+
+.mc-product-highlighted-container .mc-highlighted-amount {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .mc-product-highlighted-container .mc-highlighted-amount {
+        border-radius: 0;
+    }
+}
+
+.mc-product-highlighted-container .mc-highlighted-coin {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .mc-product-highlighted-container .mc-highlighted-coin {
+        border-radius: 0;
+    }
+}
+
+
+/* FIN - redondeo de cajas*/
+
+
+/* DatePicker */
+
+.datepicker-days .table-condensed thead,
+.datepicker-months .table-condensed thead,
+.datepicker-years .table-condensed thead,
+.datepicker-decades .table-condensed thead {
+    background-color: #3c7dbd;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.datepicker table tr td span.focused {
+    color: #fff;
+    background-color: #204d74;
+    border-color: #122b40;
+}
+
+
+/* Fin DatePicker */
+
+
+/* Inicio - Subtitulo para Formularios Paginas DEP  */
+
+.mc-product-list-container .mc-subtitle-form {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: #808285;
+}
+
+
+/* Fin - Subtitulo para Formularios en paginas DEP  */
+
+
+/* Inicio - Eventos  */
+
+.mc-productos-eventos .breadcrumb a {
+    color: #3c7dbd;
+}
+
+.mc-productos-eventos h1,
+.mc-productos-eventos h2,
+.mc-productos-eventos h3 {
+    color: #3c7dbd;
+}
+
+.mc-productos-eventos .mc-product-list-section-container .mc-product-list-content .mc-table-sidenav {
+    margin-top: 0px !important;
+}
+
+.mc-productos-eventos .mc-product-list-content {
+    margin: 0;
+}
+
+.mc-productos-eventos .mc-product-list-content .mc-product-list-container.mc-event {
+    background-color: #f1f2f2;
+}
+
+.mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-title {
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    .mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-title {
+        padding: 5% 8% 3% 9%;
+    }
+}
+
+.mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-title h2 {
+    font-weight: 300;
+    font-family: "Roboto Light", "Roboto", sans-serif;
+}
+
+.mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-title p {
+    font-family: "Roboto Light", "Roboto", sans-serif;
+    color: #808285;
+}
+
+.mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-calendar-bar-container,
+.mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-calendar-container {
+    padding: 0% 4% 3% 4%;
+}
+
+.mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-list {
+    padding: 0;
+}
+
+@media (min-width: 992px) {
+    .mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-list {
+        padding: 0% 7% 3% 8%;
+    }
+}
+
+.mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-list .mc-event-tabs {
+    border-bottom: 3px solid #03c4ff;
+    overflow-x: auto;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-list .mc-event-tabs {
+        overflow-x: inherit;
+    }
+}
+
+.mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-list .mc-event-tabs .nav-item {
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+}
+
+.mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-list .mc-event-tabs .nav-item .nav-link {
+    color: #58595b;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 12px;
+    text-align: center;
+    line-height: 17px;
+    font-weight: bold;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+@media (min-width: 1200px) {
+    .mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-list .mc-event-tabs .nav-item .nav-link {
+        text-align: center;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-list .mc-event-tabs .nav-item .nav-link:hover {
+    border-color: transparent;
+    color: #0193cf;
+}
+
+.mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-list .mc-event-tabs .nav-item .nav-link.first {
+    padding-left: 0;
+}
+
+@media (min-width: 992px) {
+    .mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-list .mc-event-tabs .nav-item .nav-link.first {
+        padding-left: 0.5rem;
+    }
+}
+
+.mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-list .mc-event-tabs .nav-link.active {
+    background: none;
+    color: #0193cf;
+    border: none;
+}
+
+.mc-productos-eventos .mc-product-list-content .mc-product-list-container .mc-event-list .mc-event-tabs .nav-item+.nav-item {
+    border-left: 1px solid #d1d3d4;
+}
+
+.mc-productos-eventos.mc-agro .mc-product-list-content .mc-product-list-container .mc-event-list .mc-event-tabs {
+    border-bottom: 3px solid #317d3d;
+}
+
+.mc-productos-eventos.mc-selecta .mc-product-list-content .mc-product-list-container .mc-event-list .mc-event-tabs {
+    border-bottom: 3px solid #00545f;
+}
+
+.mc-productos-eventos.mc-empresas .mc-product-list-content .mc-product-list-container .mc-event-list .mc-event-tabs {
+    border-bottom: 3px solid #003761;
+}
+
+.mc-product-container.mc-listado-eventos-selecta {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    color: #808285;
+}
+
+.mc-product-container.mc-listado-eventos-selecta:last-child {
+    padding-bottom: 120px;
+}
+
+.mc-product-container.mc-listado-eventos-selecta .mc-product-title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 26px;
+    color: #317d3d;
+    margin-bottom: 8px;
+}
+
+.mc-product-container.mc-listado-eventos-selecta .mc-product-title h3 {
+    font-weight: 200;
+}
+
+.mc-product-container.mc-listado-eventos-selecta .mc-product-title h3 a {
+    color: #317d3d;
+}
+
+.mc-product-container.mc-listado-eventos-selecta .mc-product-title a:hover {
+    text-decoration: none;
+}
+
+.mc-product-container.mc-listado-eventos-selecta .mc-product-subtitle {
+    font-family: "Roboto Bold", "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.mc-product-container.mc-listado-eventos-selecta .mc-product-description {
+    border-top: 1px solid #ff9204;
+    padding-top: 16px;
+    margin-top: 16px;
+    position: relative;
+    font-family: "Roboto Condensed Light", sans-serif;
+}
+
+@media (min-width: 992px) {
+    .mc-product-container.mc-listado-eventos-selecta .mc-product-description {
+        border-top: none;
+        border-left: 1px solid #ff9204;
+        padding-left: 30px;
+        padding-right: 0;
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+.mc-product-container.mc-listado-eventos-selecta .mc-product-description .mc-product-main-cta {
+    font-size: 14px;
+    padding: 8px 25px;
+    letter-spacing: 0.3px;
+}
+
+.mc-product-container.mc-listado-eventos-selecta .mc-product-description .mc-absolute-cta {
+    position: absolute;
+    right: 0px;
+    top: -31px;
+    background-color: #f1f2f2;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+}
+
+.mc-product-container.mc-listado-eventos-selecta span {
+    font-size: 17px;
+}
+
+.mc-product-container.mc-listado-eventos-selecta .mc-product-pic-container {
+    text-align: left;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.mc-product-container.mc-listado-eventos-selecta .mc-product-pic-container .mc-product-overlay {
+    /*position             : absolute;*/
+    background-color: #00545f;
+    /*width                : 220px;
+    left                   : 15px;*/
+    padding: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 4px solid black;
+    height: 35px;
+}
+
+.mc-product-container.mc-listado-eventos-selecta .mc-product-pic-container .mc-product-overlay .mc-destacado-estrella {
+    margin-left: 7px;
+    margin-top: 7px;
+    position: relative;
+    top: 5px;
+    background-image: url(https://cdn1macro.cdnedge.bluemix.net/imagen/estrella.svg);
+    background-repeat: no-repeat;
+}
+
+.mc-product-container.mc-listado-eventos-selecta .mc-product-pic-container .mc-product-pic {
+    /*margin-top: 35px;
+    width       : 220px;*/
+    max-width: 100%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .mc-product-container.mc-listado-eventos-selecta .mc-product-pic-container {
+        padding-bottom: 0;
+    }
+}
+
+.mc-product-container.mc-listado-eventos-selecta .mc-product-info {
+    font-family: "Roboto Condensed Light", sans-serif;
+}
+
+.mc-productos-eventos .mc-product-list-section-container .mc-product-list-content .mc-table-sidenav .card .card-block .mc-category .mc-item {
+    padding-left: 36px;
+    position: relative;
+}
+
+.mc-productos-eventos .mc-product-list-section-container .mc-product-list-content .mc-table-sidenav .card .card-block .mc-item {
+    padding: 10px 15px;
+    transition: all .4s;
+}
+
+
+/* Fin - Eventos  */
+
+
+/* media queries */
+
+
+/* INICIO - BREADCRUMBS*/
+
+.mc-selecta .breadcrumb a {
+    color: #00545f !important;
+}
+
+
+/* FIN  - BREADCRUMBS*/
+
+.mc-personas:not(.mc-transparent-menu) header .mc-top-menu-container:not(.hamburguer-opened) {
+    /* Modificaciones nuevas */
+    background-color: #0193cf;
+}
+
+.mc-personas.mc-grid .mc-box-color {
+    background-color: #0193cf;
+}
+
+.mc-conocenos.mc-grid .mc-box-color {
+    background-color: #0193cf;
+}
+
+.mc-banner-type-i .mc-icon-aco {
+    background-image: none;
+}
+
+.mc-banner-type-i .mc-icon-aco:before {
+    background: url("https://cdn1macro.cdnedge.bluemix.net/imagen/icon-aco.svg") no-repeat 8px 9px transparent;
+    background-size: 38% !important;
+    filter: saturate(0) brightness(2);
+}
+
+.mc-detalle-beneficio-item-content .mc-detalle-beneficio-item-image img {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+
+/* Inicio Agro */
+
+.mc-agro .mc-table-sidenav .card .card-block {
+    background-color: #578356 !important;
+}
+
+
+/* Fin Agro */
+
+
+/* Inicio Modales*/
+
+.mc-modal-streaming iframe {
+    border: none;
+}
+
+
+/* Fin Modales*/
+
+
+/* Inicio buscador tabla */
+
+.mc-buscador-tabla .mc-table-wrapper table .mc-description {
+    width: 100%;
+}
+
+
+/* Fin buscador tabla */
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("https://cdn1macro.cdnedge.bluemix.net/imagen/loading_azul.gif") 50% 50% no-repeat rgb(249, 249, 249);
+    opacity: 0.5;
+}
+
+
+/*INICIO DE CAMBIOS POR NPM-559*/
+
+
+/*LOGOS DE MARCA - GENERAL*/
+
+img.mc-package-logo-avantrip {
+    padding-left: 0px !important;
+    max-height: 100%;
+}
+
+img.mc-package-logo-despegar {
+    padding-left: 0px !important;
+    max-height: 100%;
+}
+
+
+/*FIN DE LOGOS DE MARCA - GENERAL*/
+
+
+/*LOGO MACRO EN BANNER DE BENEFICIO*/
+
+.mc-listing-busqueda .mc-package-container .mc-package-left.mc-package-box-1 .mc-package-logo-macro,
+.mc-listing-busqueda .mc-package-container .mc-package-left.mc-package-box-2 .mc-package-logo-macro,
+.mc-listing-busqueda .mc-package-container .mc-package-left.mc-package-box-3 .mc-package-logo-macro,
+.mc-listing-busqueda .mc-package-container .mc-package-right.mc-package-box-1 .mc-package-logo-macro,
+.mc-listing-busqueda .mc-package-container .mc-package-right.mc-package-box-2 .mc-package-logo-macro,
+.mc-listing-busqueda .mc-package-container .mc-package-right.mc-package-box-3 .mc-package-logo-macro {
+    position: relative !important;
+    top: 24px !important;
+    left: 30px !important;
+    width: 178px !important;
+    max-height: 43px !important;
+}
+
+
+/*FIN  LOGO MACRO EN BANNER DE BENEFICIO*/
+
+
+/*LOGO SELECTA EN BANNER DE BENEFICIO*/
+
+.mc-listing-busqueda .mc-package-container .mc-package-right.mc-package-box-1 .mc-package-logo-macro.mc-package-logo-macro-selecta {
+    position: relative !important;
+    top: 24px !important;
+    left: 30px !important;
+    width: 178px !important;
+    max-height: 43px !important;
+}
+
+@media (min-width: 992px) {
+    .mc-listing-busqueda .mc-package-container .mc-package-right.mc-package-box-1 .mc-package-logo-macro.mc-package-logo-macro-selecta {
+        left: 193px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .mc-listing-busqueda .mc-package-container .mc-package-right.mc-package-box-1 .mc-package-logo-macro.mc-package-logo-macro-selecta {
+        left: 420px;
+    }
+}
+
+
+/*FIN LOGO SELECTA EN BANNER DE BENEFICIO*/
+
+
+/*logo de marca en banner de promo - central*/
+
+.mc-listing-busqueda .mc-package-container .mc-logo-middle,
+.mc-listing-busqueda .mc-package-container .mc-logo-right {
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    top: 230px;
+    z-index: 1;
+}
+
+@media (min-width: 992px) {
+    .mc-listing-busqueda .mc-package-container .mc-logo-middle.mc-logo-middle {
+        left: 300px !important;
+        top: 90px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .mc-listing-busqueda .mc-package-container .mc-logo-middle.mc-logo-middle {
+        left: 210px;
+    }
+}
+
+
+/*fin de logo de marca en banner de promo - central*/
+
+
+/*logo de marca en banner de promo - derecha*/
+
+.mc-listing-busqueda .mc-package-container .mc-logo-right {
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    top: 230px;
+    z-index: 1;
+}
+
+@media (min-width: 992px) {
+    .mc-listing-busqueda .mc-package-container .mc-logo-right {
+        top: 90px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .mc-listing-busqueda .mc-package-container .mc-logo-right {
+        top: 90px;
+        right: 30px;
+    }
+}
+
+
+/*FIN logo de marca en banner de promo - derecha*/
+
+
+/*LOGO SELECTA A LA DERECHA*/
+
+.mc-listing-busqueda .mc-package-container .mc-package-right.mc-package-box-1 .mc-package-logo-macro.mc-package-logo-macro-selecta {
+    width: 200px !important;
+}
+
+
+/*FIN DE LOGO SELECTA A LA DERECHA*/
+
+
+/*PARRAFO CONTENEDOR DE DESCUENTO Y CUOTAS*/
+
+.mc-listing-busqueda .mc-package-container .mc-package-left.mc-package-box-1 p.mc-package-higher {
+    margin-top: 65px;
+}
+
+@media (min-width: 992px) {
+    .mc-listing-busqueda .mc-package-container .mc-package-left.mc-package-box-1 p {
+        margin-top: 40px;
+    }
+}
+
+.mc-listing-busqueda .mc-package-container .mc-package-right.mc-package-box-1 p.mc-package-higher {
+    margin-top: 65px;
+}
+
+@media (min-width: 992px) {
+    .mc-listing-busqueda .mc-package-container .mc-package-right.mc-package-box-1 p {
+        margin-top: 40px;
+    }
+}
+
+
+/*FIN PARRAFO CONTENEDOR DE DESCUENTO Y CUOTAS*/
+
+
+/*TEXTO DESCUENTO DERECHA*/
+
+.mc-listing-busqueda .mc-package-container .mc-package-right.mc-package-box-1 p span:last-child.mc-cuotas-fijas-right {
+    margin-right: -30px;
+    text-align: right;
+    right: 30px;
+    position: relative;
+}
+
+
+/*FIN TEXTO DESCUENTO DERECHA*/
+
+
+/*TEXTO DESCUENTO Y CUOTAS IZQUIERDA*/
+
+.mc-listing-busqueda .mc-package-container .mc-package-left.mc-package-box-1 p span:last-child.mc-cuotas-fijas-left {
+    margin-left: -30px;
+}
+
+span.mc-cuotas-fijas-left.mc-span-two-lines {
+    left: 30px;
+    position: relative;
+}
+
+.mc-listing-busqueda .mc-package-container .mc-package-left.mc-package-box-1 p span:last-child.mc-cuotas-fijas-left {
+    text-align: center;
+}
+
+
+/*FIN TEXTO DESCUENTO Y CUOTAS IZQUIERDA*/
+
+
+/*FIN DE CAMBIOS POR NPM-559*/
+
+
+/* INCIO LOGO USUARIOS FINANCIEROS */
+
+.mc-copy-right .mc-copy-img-uf {
+    background-image: url("https://cdn1macro.cdnedge.bluemix.net/imagen/usuariosfinancieros.png");
+    position: absolute;
+    height: 90px;
+    padding-left: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+    background-size: contain;
+}
+
+@media (max-width: 414px) {
+    /*  iPhone 6+: 414 x 736   */
+    .mc-copy-right .mc-copy-img-uf {
+        top: 90px;
+        left: 100%;
+        height: 60px;
+        width: 140px;
+    }
+}
+
+@media (max-width: 375px) {
+    /*  iPhone 5/SE : 320px
+        iPhone 6/7/8: 375px
+        Galaxy S5   : 360px */
+    .mc-copy-right .mc-copy-img-uf {
+        left: 0px;
+    }
+}
+
+
+/* FIN LOGO USUARIOS FINANCIEROS */
+
+
+/* INICIO - Issue NPM-547 - Iconos de leyenda alineados */
+
+.mc-calendar-legends .mc-legend {
+    vertical-align: top;
+}
+
+
+/* FIN - Issue NPM-547 - Iconos de leyenda alineados */
+
+
+/* INICIO   - EVENTOS Y EXPERIENCIAS */
+
+.mc-productos-eventos .mc-listado-eventos-persona {
+    color: #808285
+}
+
+@media(max-width:768px) {
+    .mc-productos-eventos .mc-listado-eventos-persona {
+        padding: 10px
+    }
+    .mc-product-list-section-container .mc-product-list-content .mc-product-list-container [role=tabpanel] {
+        padding: 0px
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .mc-productos-eventos .mc-listado-eventos-persona {
+        padding: 5px
+    }
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona:last-child {
+    padding-bottom: 120px
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-product-title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 26px;
+    color: #317d3d;
+    margin-bottom: 20px
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-product-title h3 {
+    font-weight: 200
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-product-title a:hover {
+    text-decoration: none
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container {
+    padding-bottom: 15px;
+    position: relative
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container .mc-product-overlay {
+    display: none
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container .mc-product-subtitle {
+    font-family: "Roboto Bold", Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container .mc-product-description {
+    border-top: 1px solid #ff9204;
+    padding-top: 16px;
+    margin-top: 16px;
+    position: relative;
+    font-family: "Roboto Condensed Light", sans-serif
+}
+
+@media(min-width:992px) {
+    .mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container .mc-product-description {
+        border-top: 0;
+        border-left: 1px solid #ff9204;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 0;
+        margin-top: 0
+    }
+}
+
+@media(min-width:1200px) {
+    .mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container .mc-product-description {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container .mc-product-description .mc-product-main-cta {
+    font-size: 14px;
+    padding: 8px 25px;
+    letter-spacing: .3px
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container .mc-product-description .mc-absolute-cta {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 35px
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container .mc-product-description>.row {
+    overflow: auto
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container span {
+    font-size: 16px
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container .row {
+    margin: 0
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container .row .mc-product-pic-container {
+    position: relative;
+    text-align: center;
+    padding-bottom: 12px
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container .row .mc-product-pic-container .mc-product-pic {
+    margin-top: 5px;
+    width: 220px;
+    max-width: 100%;
+    min-height: 125px;
+    border-radius: 10px
+}
+
+@media(min-width:768px) {
+    .mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container .row .mc-product-pic-container {
+        padding-bottom: 0
+    }
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona .mc-evento-container .mc-product-info {
+    font-family: "Roboto Condensed Light", sans-serif;
+    line-height: 19px
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona.mc-destacado-selecta .mc-product-title {
+    margin-bottom: 45px
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona.mc-destacado-selecta .mc-product-title a {
+    color: #317d3d
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona.mc-destacado-selecta .mc-evento-container {
+    background-color: #fff;
+    padding-top: 25px
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona.mc-destacado-selecta .mc-product-overlay {
+    display: block;
+    position: absolute;
+    background-color: #00545f;
+    top: -35px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 4px solid #000;
+    height: 45px;
+    width: 100%
+}
+
+.mc-productos-eventos .mc-listado-eventos-persona.mc-destacado-selecta .mc-product-overlay .mc-destacado-estrella {
+    margin-left: 7px;
+    margin-top: 10px;
+    background-image: url(https://cdn1macro.cdnedge.bluemix.net/imagen/estrella.svg);
+    background-repeat: no-repeat;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #fff;
+    padding-left: 25px;
+    margin-left: 25px
+}
+
+
+/* FIN      - EVENTOS Y EXPERIENCIAS */
+
+
+/* Cambio para quitar buscador del header en paginas de busqueda*/
+
+.noheadersearch .mc-control-necesidades {
+    display: none !important;
+}
+
+
+/*Cambio por EP-121*/
+
+.gm-style .gm-style-iw {
+    background-color: #0094d3 !important;
+    top: 0px !important;
+    width: 300px !important;
+    height: 100px !important;
+    padding-top: 10px;
+    display: block !important;
+    box-shadow: 0 3px 8px #646464;
+}
+
+
+/*AGRO BUSCADOR NOVEDADES, NEWSLETTER Y NORMATIVAS*/
+
+.mc-agro-comunidad-novedades .mc-field-wrapper .row .row>div+div+div {
+    margin-top: 0px;
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .mc-agro-comunidad-novedades .mc-field-wrapper .row .row>div+div+div {
+        margin-top: 0px
+    }
+}
+
+
+/*FIN AGRO BUSCADOR NOVEDADES, NEWSLETTER Y NORMATIVAS*/
+
+
+/*AHORROS Y CUOTAS*/
+
+@media (min-width: 1200px) {
+    .mc-descuentos-cuotas.mc-personas header .mc-main-banner-container .mc-main-banner-bg.bg-flia {
+        background-size: 110%;
+    }
+}
+
+
+/*FIN AHORROS Y CUOTAS*/
+
+
+/*BOTON BANCA INTERNET SELECTA*/
+
+.mc-selecta .mc-banca-internet .dropdown-menu a {
+    color: #9e3034;
+}
+
+.mc-selecta .mc-banca-internet .dropdown-menu .mc-personas:before {
+    background: url(/imagen/banca-personas-selecta.svg)no-repeat center center;
+}
+
+.mc-selecta .mc-banca-internet .dropdown-menu .mc-empresas:before {
+    background: url(/imagen/banca-empresas-selecta.svg)no-repeat center center;
+}
+
+
+/*FIN BOTON BANCA INTERNET SELECTA*/
+
+
+/*CHAT BOT*/
+
+.mc-chatbot {
+	display: none;
+}
+
+.suggestion-topics .header h2 {
+    margin-top: 0px;
+}
+
+#chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a {
+    margin-top: -2px;
+}
+
+.mc-selecta #chat_container .messenger-frame .messenger-body .suggestion-topics .header {
+    background-color: #00545f;
+    border-bottom: 1px solid #00545f;
+}
+
+.mc-selecta #chat_container .messenger-frame .messenger-body .suggestion-topics ul,
+#chat_container .messenger-frame .messenger-body .suggestion-topics ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.mc-selecta #chat_container .messenger-frame .messenger-body .suggestion-topics .header h2,
+#chat_container .messenger-frame .messenger-body .suggestion-topics .header h2 {
+    margin-bottom: 0px;
+}
+
+.mc-selecta .suggestion-topics .header h2 {
+    color: #FFF !important;
+}
+
+.mc-selecta #chat_container .messenger-frame .messenger-body .suggestion-topics .header h2 {
+    color: #fff;
+}
+
+@media (min-width: 1200px) {
+    .mc-selecta #chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a {
+        margin-top: -6px;
+    }
+    #chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a {
+        /* margin-top: -5px; */
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .mc-selecta #chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a {
+        margin-top: -4px;
+    }
+    #chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a {
+        margin-top: -2px;
+    }
+}
+
+@media (max-width: 992px) {
+    .mc-selecta #chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a {
+        margin-top: -4px;
+    }
+    #chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a {
+        margin-top: -2px;
+    }
+}
+
+
+/*FIN CHAT BOT*/
+
+
+/* ModuloDEP1 */
+
+.row.mc-product-header .mc-share-section,
+.row .secondary-btn {
+    position: relative;
+}
+
+@media (max-width: 575px) {
+    .mc-sustentabilidad.mc-detalle-producto .mc-product-list-container .mc-product-list .mc-share-section {
+        top: 0px;
+    }
+}
+
+
+/* FIN ModuloDEP1 */
+
+
+/*CALENDARIO EVENTOS Y EXPERIENCIAS*/
+
+@media (max-width: 768px) {
+    .mc-product-calendar-container table {
+        display: block;
+    }
+}
+
+
+/*FIN CALENDARIO EVENTOS Y EXPERIENCIAS*/
+
+
+/**/
+
+.mc-home:not(.mc-transparent-menu) header .mc-bottom-menu-container {
+    background-color: #092f57;
+}
+
+#chatBotHome {
+    background-color: transparent !important;
+}
+
+.mc-home:not(.mc-transparent-menu) header .mc-top-menu-container:not(.hamburguer-opened) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .6) 0, transparent 100%);
+    background-color: #092f57;
+}
+
+.mc-home header .mc-top-menu-container {
+    background-image: linear-gradient(to bottom, transparent 50%, #092f57 50%);
+}
+
+.mc-home footer .mc-social-app-container,
+.mc-home footer .mc-top-menu-container {
+    background-color: #092f57;
+}
+
+
+/**/
+
+
+/*ELEMENTOS DEL CHAT BOT DE LA HOME*/
+/*
+.mc-home .frame-header {
+    display: none;
+}
+*/
+
+#anteojos {
+    background-image: url(/sites/banco-macro/imagen/chat-logo/chat-logo.svg) !important;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+@media (max-width: 480px) {
+    #anteojos {
+        background-position-y: bottom;
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    #anteojos {
+    background-size: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    h5.saludo {
+        display: block;
+    }
+    h3.saludo {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) {
+    h5.saludo {
+        display: none;
+    }
+    h3.saludo {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    #chatContainer {
+        margin: 0;
+        padding: 0;
+        max-width: none;
+    }
+    #eMeBody h5 {
+        font-size: 1em;
+    }
+    #eMeBody .boton-enviar {
+        font-size: 0.8em;
+    }
+    .chat-bot-home .input-chat {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 768px) {
+    .mc-home video {
+        top: 40%;
+        transform: translate(-48%, -60%);
+    }
+    .chat-bot-home .container .row:first-child {
+        margin-top: 100px;
+    }
+    .chat-bot-home .container .row:last-child {
+        margin-bottom: 20px;
+    }
+    .chat-bot-home #chat_container .messenger-frame .messenger-body .message {
+        width: 50%;
+    }
+}
+
+.mc-home header .mc-main-banner-container .mc-main-banner.mc-home-main-banner {
+    background-image: none;
+    background-color: #0A1C3D !important;
+}
+
+.mc-home header .mc-main-banner-container .chat-bot-home {
+    /* background-color: #092f57 !important; */
+    border-bottom: none;
+    height: 100vh;
+}
+
+#chat_container.macro-chatbot .messenger-frame {
+    border-radius: 0px;
+}
+
+.chat-bot-home .container .row>div {
+    margin-bottom: 10px;
+}
+
+.chat-bot-home .container {
+    justify-content: normal !important;
+    /* max-width: 70%; */
+    width: 100%;
+}
+
+.chat-bot-home .container .row:first-child {
+    height: 26vh;
+    min-height: 210px;
+}
+
+#eMeBody {
+    height: 80vh;
+    min-height: 200px;
+}
+
+.chat-bot-home .saludo {
+    color: #ED2F79;
+    text-align: center;
+}
+
+
+/*.chat-bot-home .container .row .svg-contenedor{
+    margin-bottom: 140px;
+}*/
+
+.chat-bot-home svg {
+    max-width: 300px;
+}
+
+.chat-bot-home .input-chat {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 100%;
+    padding: 6px 24px;
+    outline: 0;
+}
+
+.chat-bot-home .input-chat::placeholder {
+    color: white !important;
+}
+
+header .mc-top-menu-container .btn-salmon {
+    margin: 10px 0;
+    position: relative;
+    line-height: 16px;
+}
+
+.btn.btn-salmon,
+.btn.btn-salmon.second-btn,
+.btn.btn-salmon.second-btn.white {
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    transition: color .3s;
+    transform: translateZ(0);
+}
+
+.mc-home .mc-banca-internet .btn.btn-orange {
+    background-color: #11A8A7;
+}
+
+.mc-home .mc-banca-internet .btn.btn-orange.second-btn:before,
+.mc-home .mc-banca-internet .btn.btn-orange:before,
+.mc-home .radial-out-orange:before {
+    background: #0F8E8D;
+}
+
+.chat-bot-home .boton-enviar {
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    width: 100%;
+    transition: color .3s;
+    transform: translateZ(0);
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    background-color: #11A8A7;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    border-radius: 20px;
+    border: 0 none;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    padding: 8px 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+    .chat-bot-home .boton-enviar {
+        font-size: 13px;
+        padding: 11px 0px;
+    }
+    header .mc-top-menu-container .btn-salmon {
+        font-size: 13px;
+        padding: 11px 24px;
+        margin-top: 13px;
+    }
+}
+
+.chat-bot-home #chat_container {
+    position: relative;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    height: 60%;
+}
+
+.chat-bot-home #chat_container .messenger-frame .messenger-body {
+    height: 100%;
+    background-color: transparent !important;
+    /* overflow-y      : scroll; */
+    /* background-image: linear-gradient(0deg, #063c5c 0, #0c2035 100%); */
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 0px;
+}
+
+.chat-bot-home #chat_container .messenger-frame {
+    width: auto;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    display: block;
+    z-index: 2;
+    box-shadow: none;
+}
+
+.chat-bot-home .mc-personas header .mc-main-banner-container .mc-main-banner p {
+    padding: 0;
+}
+
+.chat-bot-home #chat_container .messenger-frame .messenger-body .message.send {
+    text-align: right;
+}
+
+.chat-bot-home #chat_container .messenger-frame .messenger-body .overflow {
+    scrollbar-color: #ffa489 transparent;
+    scrollbar-width: thin;
+}
+
+
+/* width */
+
+.chat-bot-home #chat_container .messenger-frame .messenger-body .overflow::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Handle */
+
+.chat-bot-home #chat_container .messenger-frame .messenger-body .overflow::-webkit-scrollbar-thumb {
+    background: #ED2F79;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+.chat-bot-home #chat_container .messenger-frame .messenger-body .overflow::-webkit-scrollbar-thumb:hover {
+    background: #38a9e0;
+}
+
+.chat-bot-home #chat_container.macro-chatbot .messenger-frame .messenger-body
+/*.watson*/
+
+,
+.chat-bot-home #chat_container.macro-chatbot .messenger-frame .messenger-body .yo {
+    color: white;
+}
+
+.chat-bot-home #chat_container.macro-chatbot .messenger-frame .messenger-body .watson {
+    float: left;
+    margin-top: 0px;
+}
+
+.chat-bot-home #chat_container .messenger-frame .messenger-body .message .message-block p {
+    padding: 0px;
+}
+
+
+/***************************************************************/
+
+#chat_container.macro-chatbot .messenger-frame .frame-header>.table {
+    background-color: #092f57;
+}
+
+#chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a {
+    background-color: #11A8A7;
+}
+
+#chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a:hover {
+    background-color: #0F8E8D;
+}
+
+#chat_container.macro-chatbot .messenger-frame .frame-footer .send_message a:before {
+    background-color: #0D7C7C;
+}
+
+.bg-chatlogo,
+#chat_container.macro-chatbot .launcher .avatar {
+    /* background-image: url(anteojoseMe.svg) !important; */
+    background-repeat: no-repeat;
+    background-position: center center !important;
+}
+
+.load7 i {
+    background: #ED2F79;
+}
+
+.load7 i:nth-child(2) {
+    background: #11A8A7;
+}
+
+.chat-bot-home #chat_container.macro-chatbot .messenger-frame .messenger-body .watson {
+    font-size: 14px;
+}
+
+.chat-bot-home #chat_container.macro-chatbot .messenger-frame .messenger-body .yo {
+    font-size: 10px;
+}
+
+#chat_container.macro-chatbot .messenger-frame .messenger-body .watson,
+#chat_container.macro-chatbot .messenger-frame .messenger-body .yo {
+    font-size: 12px;
+}
+
+.mc-home header .mc-main-banner-container .mc-main-banner .scroll-icon-container {
+    position: relative;
+    left: 0;
+}
+
+.mc-home .scroll-icon-container .scroll-icon {
+    left: 0;
+}
+
+
+/*FIN ELEMENTOS DEL CHAT BOT DE LA HOME*/
+
+
+/*EP-237 (CORRECCION DE CLASES MAL ASIGNADAS APPLICATION_MACRO.CSS)*/
+
+.mc-personas .mc-banner-type-f {
+    background-color: rgba(1, 147, 207, 0.8);
+}
+
+
+/*FIN EP-237 (CORRECCION DE CLASES MAL ASIGNADAS APPLICATION_MACRO.CSS)*/
+
+
+/*EP-187 Modificacion de ancho en contenedor de iconos compartir*/
+
+.mc-share-container {
+    width: 210px !important;
+}
+
+
+/*fin de EP-187*/
+
+
+/*NUEVO ICONO DEL SITIO*/
+
+.mc-home.mc-transparent-menu header .mc-logo-wrapper {
+    background: url(https://cdn1macro.cdnedge.bluemix.net/sites/banco-macro/imagen/logo-mobile.svg)no-repeat 0 top;
+}
+
+@media (min-width: 768px) {
+    .mc-home.mc-transparent-menu header .mc-logo-wrapper {
+        background: url(https://cdn1macro.cdnedge.bluemix.net/sites/banco-macro/imagen/logo-slogan-home.svg)no-repeat 0 top;
+        background-size: 140px 52px;
+    }
+}
+
+
+/*FIN NUEVO ICONO DEL SITIO*/
+
+
+/*JIRA EP-253*/
+
+.mc-personas .detalle-pv .mc-banner-type-c .overlay-yellow {
+    background-color: rgba(1, 147, 207, 0.8);
+}
+
+
+/*FIN JIRA EP-253*/
+
+header .mc-bottom-menu-container .mc-bottom-menu .mc-border-color1 {
+    padding-bottom: 0.90rem;
+}
+
+header .mc-bottom-menu-container .mc-bottom-menu .mc-space {
+    margin-bottom: 0px;
+}
+
+.homepage .mc-main-banner-bg-homepage {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header .mc-bottom-menu-container .mc-bottom-menu .navbar .mc-full-width {
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+/*::-webkit-scrollbar {
+    width: 10px;
+    background: white;
+    // make scrollbar transparent
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 5px;
+  }*/
+
+.mc-empresas:not(.mc-transparent-menu) header .mc-macro-apps {
+    visibility: visible;
+}
+
+.mc-agro:not(.mc-transparent-menu) header .mc-macro-apps {
+    visibility: visible;
+}
+
+
+/* Perfil Inversor BM */
+
+.mc-perfil-inversor.mc-header-3 .insight-wrapper p+p {
+    font-weight: 300;
+    margin: 20px 0 15px;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor.mc-header-3 .insight-wrapper p+p {
+        margin: 40px 0 15px;
+    }
+}
+
+.mc-perfil-inversor.mc-header-3 .insight-wrapper p+p+a {
+    float: left;
+    margin-left: 0;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor.mc-header-3 .insight-wrapper p+p+a {
+        margin-left: 64px;
+    }
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #000;
+    padding: 40px 30px 0;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-riesgo-rendimiento {
+        padding: 70px 30px 0;
+    }
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .row {
+    margin-bottom: 50px;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-riesgo-rendimiento .row {
+        margin-bottom: 110px;
+    }
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento.mc-preguntas-perfil .row {
+    margin-bottom: 5px !important;
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento.mc-preguntas-perfil .mc-b-bottom-lgrey,
+.mc-perfil-inversor .mc-riesgo-rendimiento.mc-preguntas-perfil .mc-perfil-inversor .mc-wording,
+.mc-perfil-inversor .mc-perfil-inversor .mc-riesgo-rendimiento.mc-preguntas-perfil .mc-wording {
+    margin-top: 20px;
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento.mc-preguntas-perfil dt {
+    font-size: 24px;
+    color: #000;
+    font-weight: 400;
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento.mc-preguntas-perfil .mc-label {
+    color: #000;
+    font-size: 18px;
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-title {
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-title {
+        text-align: left;
+        padding: 60px 15px 0;
+    }
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-title p {
+    margin: 0;
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-title .mc-riesgo-rendimiento-status {
+    background-color: #0193cf;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-title .mc-riesgo-rendimiento-status {
+        font-size: 50px;
+        display: inline-block;
+    }
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info {
+    border-top: 1px solid #000;
+    border-left: none;
+    padding: 30px 0 0;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info {
+        border-top: none;
+        border-left: 1px solid #000;
+        padding: 0 0 0 60px;
+    }
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info h2 {
+        font-size: 24px;
+    }
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+    padding-right: 0;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info p {
+        font-size: 24px;
+        padding-right: 60px;
+    }
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info .mc-riesgo-rendimiento-level {
+    min-height: 110px;
+    background-color: #f1f2f2;
+    margin: 20px -15px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    position: relative;
+    padding-top: 20px;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info .mc-riesgo-rendimiento-level {
+        min-height: 80px;
+        align-items: center;
+        padding-top: 0;
+        margin: 40px 0;
+    }
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info .mc-riesgo-rendimiento-level .mc-riesgo-rendimiento-dots {
+    position: absolute;
+    bottom: 10px;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info .mc-riesgo-rendimiento-level .mc-riesgo-rendimiento-dots {
+        position: static;
+        bottom: 0;
+    }
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info .mc-riesgo-rendimiento-level .mc-riesgo-rendimiento-dots .mc-large-dots ul.mc-chains {
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info .mc-riesgo-rendimiento-level .mc-riesgo-rendimiento-dots .mc-large-dots ul.mc-chains::before {
+    content: "";
+    position: absolute;
+    border-color: #000;
+    border-style: dashed;
+    border-width: 0 0 1px 0;
+    width: 100%;
+    z-index: -1;
+    top: 24px;
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info .mc-riesgo-rendimiento-level .mc-riesgo-rendimiento-dots .mc-large-dots li.mc-chain {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 35px;
+    border-radius: 50%;
+    position: relative;
+    top: 12px;
+    vertical-align: top;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info .mc-riesgo-rendimiento-level .mc-riesgo-rendimiento-dots .mc-large-dots li.mc-chain {
+        margin-left: 60px;
+    }
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info .mc-riesgo-rendimiento-level .mc-riesgo-rendimiento-dots .mc-large-dots li.mc-chain:first-child {
+    margin-left: 0;
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info .mc-riesgo-rendimiento-level .mc-riesgo-rendimiento-dots .mc-large-dots li.mc-chain.mc-enabled {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    text-align: center;
+    top: 6px;
+    background-color: transparent;
+    border: 1px dashed;
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info .mc-riesgo-rendimiento-level .mc-riesgo-rendimiento-dots .mc-large-dots li.mc-chain.mc-enabled span {
+    background-color: #0193cf;
+    width: 28px;
+    height: 28px;
+    transform: translateY(10%);
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info .mc-riesgo-rendimiento-level .mc-riesgo-rendimiento-dots .mc-large-dots li.mc-chain span {
+    background-color: #8a8a8a;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info .mc-riesgo-rendimiento-level p {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #787878;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-riesgo-rendimiento .mc-riesgo-rendimiento-info .mc-riesgo-rendimiento-level p {
+        font-size: 20px;
+    }
+}
+
+.mc-perfil-inversor .mc-black-overlay {
+    background-color: rgba(65, 65, 65, 0.8);
+}
+
+.mc-perfil-inversor .mc-black-overlay .mc-profile-products-container {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+
+.mc-perfil-inversor .mc-black-overlay .mc-profile-products-container h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-black-overlay .mc-profile-products-container h2 {
+        font-size: 40px;
+    }
+}
+
+.mc-perfil-inversor .mc-black-overlay .mc-profile-products-container p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-title {
+    padding: 60px 15px 40px;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-title {
+        padding: 60px 0 20px;
+    }
+}
+
+.mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-title h2:after {
+    content: '';
+    display: block;
+    width: 44px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #03c4ff;
+    margin: 15px 0 10px;
+}
+
+.mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-packages {
+    background: rgba(255, 255, 255, 0.07);
+    padding-bottom: 30px;
+}
+
+.mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-packages .row div {
+    padding: 0 5px;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-packages .row div {
+        padding: 0;
+    }
+}
+
+.mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-packages .mc-profile-products-packages-container {
+    min-height: 100px;
+    text-align: center;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 25px 25px 0;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 20px 0;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-packages .mc-profile-products-packages-container {
+        min-height: 254px;
+        padding: 30px 20px;
+        margin: 15px;
+    }
+}
+
+.mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-packages .mc-profile-products-packages-container .mc-profile-products-packages-title {
+    text-align: left;
+    max-width: 200px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1;
+    display: inline-block;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-packages .mc-profile-products-packages-container .mc-profile-products-packages-title {
+        text-align: center;
+        font-size: 47px;
+        padding-left: 0;
+        padding-top: 0;
+    }
+}
+
+.mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-packages .mc-profile-products-packages-container .mc-profile-products-packages-description {
+    text-align: left;
+    width: 100px;
+    height: 70px;
+    font-weight: 400;
+    padding-top: 0;
+    border-top: none;
+    border-left: 1px solid #03c4ff;
+    padding-left: 25px;
+    display: inline-flex;
+    align-items: center;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-packages .mc-profile-products-packages-container .mc-profile-products-packages-description {
+        width: 250px;
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 0;
+        border-top: 1px solid #03c4ff;
+        border-left: none;
+        display: inline-block;
+    }
+}
+
+.mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-download {
+    text-align: center;
+    padding: 50px 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-download {
+        padding: 30px 0 50px;
+    }
+}
+
+.mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-download h2 {
+    font-size: 24px;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-black-overlay .mc-profile-products-container .mc-profile-products-download h2 {
+        font-size: 30px;
+    }
+}
+
+.mc-perfil-inversor .mc-perfil-inversor {
+    background: #bfbfbf;
+    background: linear-gradient(to bottom, #bfbfbf 0%, #f1f2f2 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#bfbfbf', endColorstr='#f1f2f2', GradientType=0);
+    border-bottom: 2px solid #000;
+}
+
+.mc-perfil-inversor.mc-home-no-mw .mc-main-content.container .container.mc-portfolio-products {
+    font-family: "Roboto", sans-serif;
+    padding: 60px 15px 40px;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor.mc-home-no-mw .mc-main-content.container .container.mc-portfolio-products {
+        padding: 80px 0 40px;
+    }
+}
+
+.mc-perfil-inversor.mc-home-no-mw .mc-main-content.container .container.mc-portfolio-products .mc-portfolio-products-title h2 {
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1.2;
+    padding: 0;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor.mc-home-no-mw .mc-main-content.container .container.mc-portfolio-products .mc-portfolio-products-title h2 {
+        font-size: 40px;
+        line-height: 0.9;
+        padding: 0 100px 0 0;
+    }
+}
+
+.mc-perfil-inversor.mc-home-no-mw .mc-main-content.container .container.mc-portfolio-products .mc-portfolio-products-title h2:after {
+    content: '';
+    display: block;
+    width: 44px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #023962;
+    margin: 20px 0;
+}
+
+.mc-perfil-inversor.mc-home-no-mw .mc-main-content.container .container.mc-portfolio-products p {
+    font-size: 18px;
+    font-weight: 300;
+    word-break: break-all;
+    color: #58595b;
+    line-height: 1.2;
+    padding: 0;
+    margin: 40px 0 10px;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor.mc-home-no-mw .mc-main-content.container .container.mc-portfolio-products p {
+        word-break: normal;
+        padding: 0 90px 0 0;
+    }
+}
+
+.mc-perfil-inversor.mc-home-no-mw .mc-main-content.container .container.mc-portfolio-products .mc-portfolio-products-info {
+    border-left: none;
+    border-top: 2px solid #098ecc;
+    padding: 52px 0 0 0;
+    margin: 40px 15px 0;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor.mc-home-no-mw .mc-main-content.container .container.mc-portfolio-products .mc-portfolio-products-info {
+        border-left: 2px solid #098ecc;
+        border-top: none;
+        padding: 0 0 0 80px;
+        margin: 0;
+    }
+}
+
+.mc-perfil-inversor.mc-home-no-mw .mc-main-content.container .container.mc-portfolio-products .mc-portfolio-products-info .mc-portfolio-products-list {
+    padding: 0;
+}
+
+.mc-perfil-inversor.mc-home-no-mw .mc-main-content.container .container.mc-portfolio-products .mc-portfolio-products-info .mc-portfolio-products-list li {
+    list-style: none;
+}
+
+.mc-perfil-inversor.mc-home-no-mw .mc-main-content.container .container.mc-portfolio-products .mc-portfolio-products-info .mc-portfolio-products-list li h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mc-perfil-inversor.mc-home-no-mw .mc-main-content.container .container.mc-portfolio-products .mc-portfolio-products-info .mc-portfolio-products-list li p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+    padding: 0;
+    margin: 0 0 50px;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor.mc-home-no-mw .mc-main-content.container .container.mc-portfolio-products .mc-portfolio-products-info .mc-portfolio-products-list li p {
+        font-size: 18px;
+        padding: 0 110px 0 0;
+    }
+}
+
+.mc-perfil-inversor.mc-simulador-renta.mc-cotizacion-accion .mc-banner-type-content {
+    min-height: auto;
+}
+
+.mc-perfil-inversor.mc-simulador-renta.mc-cotizacion-accion .mc-banner-type-content .mc-banner-information-container .mc-banner-information {
+    margin: 60px auto;
+}
+
+.mc-perfil-inversor .mc-info-legal {
+    margin: 20px 15px;
+}
+
+@media (min-width: 1200px) {
+    .mc-perfil-inversor .mc-info-legal {
+        margin: 50px 15px 40px;
+    }
+}
+
+
+/* Fin Perfil Inversor BM */
+
+
+/* Inicio nueva pantalla Comunicados de Prensa */
+
+.mc-agro-comunidad-novedades, .mc-conocenos-comunidad-novedades {
+    color: #00515a;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.product-characteristic-cft-container {
+    padding: 20px;
+}
+
+.pdn-0 {
+    padding: 0;
+}
+
+.mc-mini-subtitle {
+    color: #808285;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.mc-title-agro {
+    color: #00515a;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.mc-some-wording {
+    color: #808285;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.mc-some-wording {
+    color: #808285;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.new-page-icon {
+    background: url(/sites/banco-macro/imagen/icon-link-externo-orange.svg) no-repeat;
+    background-size: 30px;
+    height: 50px;
+    width: 35px;
+    display: inline-block;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.new-page-icon-mb {
+    background: url(/sites/banco-macro/imagen/icon-link-externo-orange.svg) no-repeat;
+    background-size: 30px;
+    height: 50px;
+    width: 35px;
+    background-color: #fff;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+    bottom: 43px;
+}
+
+.center-img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.mc-table-wrapper-no-bkgrnd {
+    background-color: #f1f2f2 !important;
+    /* display: block !important */
+}
+
+.mc-new-title-agro {
+    color: #00515a !important;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.border-line {
+    border-top: 1px solid #ff9204;
+    padding-top: 16px;
+    margin-top: 16px;
+    position: relative;
+}
+
+.new-table-scroll {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+
+/* Fin nueva pantalla Comunicados de Prensa */
+
+/*Landing Selecta*/
+.mc-selecta .mc-item-box {
+    padding-top: 110px !important;
+}
+@media (min-width: 1200px) {
+    .mc-selecta .mc-item-box {
+        padding-top: 230px !important;
+    } 
+}
+/*Fin Landing Selecta*/
+
+/*Float Banner*/
+
+.float-banner {
+  padding-top: 26px !important;
+  padding-right: 50px;
+  padding-left: 50px;
+  text-align: left !important;
+  }
+  
+.float-banner-border {
+ /* border-top: 3px solid rgb(236, 238, 239);*/
+ /* border-bottom: 4px solid rgb(236, 238, 239);*/
+  z-index: 1501;
+  position: fixed;
+  left: 20%;
+  right: 20%;
+  top: 15%;
+  }
+  
+.float-back {
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	position: fixed; 
+	top: 0px;
+	left: 0px;
+  }
+  
+@media (
+	max-width: 1200px) {
+		#float-message{
+			display:none;
+			visibility: hidden;
+			clear: both;			
+		}
+
+}
+/*Fin Banner*/

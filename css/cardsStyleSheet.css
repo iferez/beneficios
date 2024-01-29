@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?Titillium+Web:ital,wght@0,200;0,300;0,600;0,700;0,900;1,200;1,300;1,600 & display=swap');
+*,
+::before
+::after
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body 
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Css cajas*/
+
+.container-seccion-cajas 
+{
+	display: flex;
+	flex-direction: row;
+	margin: 20px auto;
+	width: 60%;
+	justify-content: center;
+	column-gap: 45px;
+	position: relative;
+}
+.container-content 
+{
+	background-color: white;
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+	text-align: center;
+	align-items: center;
+	padding: 20px 10px;
+	width: 251px;
+	box-shadow: 0px 0px 25px rgb(0 0 0 / 10%);
+	justify-content: center;
+}
+
+.container-content img 
+{
+	width: 70px;
+	margin-top: 11px;
+}
+
+h3.cardText, p.cardText {
+	font-family: 'Titillium Web';
+}
+
+h3.cardText 
+{
+	margin: 0;
+	display: block;
+    font-size: 1.17em;
+    /* margin-block-start: 1em; */
+    /* margin-block-end: 1em;  */
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p.cardText {
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.container-content p 
+{
+	font-size: 18px;
+	margin: 0 16px 16px;
+}
+
+/*----Responsive Tablet----*/
+
+@media (max-width: 992.98px)
+{
+	.seccion-cajas 
+	{
+	  width: 100%;
+	  background: white;
+	}
+
+	.container-seccion-cajas 
+	{
+	  display: flex;
+	  flex-direction: column;
+	  margin: 0px auto;
+	  width: 80%;
+	  justify-content: center;
+	  row-gap: 45px;
+	  align-items: center;
+	  position: relative;
+	}
+
+	.container-content {
+	  background-color: white;
+	  border-radius: 50px;
+	  display: flex;
+	  flex-direction: column;
+	  row-gap: 15px;
+	  text-align: center;
+	  align-items: center;
+	  padding: 20px 10px;
+	  width: 80%;
+	  box-shadow: 0px 0px 25px rgb(0 0 0 / 10%);
+	}
+}
+
+/*----Responsive Mobile----*/
+
+@media (max-width: 767.98px)
+{
+	.container-seccion-cajas
+	 {
+	  display: flex;
+	  flex-direction: column;
+	  margin: 0px auto;
+	  width: 80%;
+	  justify-content: center;
+	  row-gap: 45px;
+	  align-items: center;
+	  position: relative;
+	}
+}

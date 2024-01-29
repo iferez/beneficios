@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  *****  AJUSTES DE TÍTULOS EN BANNER HOME   ******** */
+
+/*.mc-banner-home h1, .mc-banner-home h2, .mc-banner-home h3 {font-size: 25px; font-weight: bold; color:#fff; }
+
+.mc-banner-home span{ font-size: 18px }*/
+
+/* ********  BREADCRUMBS AJUSTE COLOR SEGUN MOCKS APROBADOS ********* */
+
+
+.mc-accesos .breadcrumb li.breadcrumb-item:last-child{ color: #3c92ca}
+
+
+/* ******  CARDS ACCESOS   ****** */
+
+.mc-accesos .page-title h1{ font-weight: normal}
+.mc-accesos .page-title .h1{ font-weight: normal}
+
+.cards-accesos, .card-mobile{/* padding-bottom:45px; *//* padding-top:20px */}
+
+.carousel-accesos .col-md-3, .carousel-accesos-mobile .col-md-3 {padding-right:10px; padding-left:10px; background: #fff}
+
+.cards-accesos .card-acceso, .cards-accesos-mobile .card-acceso{text-align: center!important; border-radius: 20px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border:1px solid #eee; background:#fff; height: 145px; margin-bottom: 40px}
+
+.cards-accesos .card-acceso p, .cards-accesos-mobile .card-acceso p{ color: #073352; padding: 0 25px; font-size: 13px; text-transform: uppercase; font-weight: 600}
+
+.cards-accesos .card-acceso svg, .cards-accesos-mobile .card-acceso svg  { margin: 15px auto; fill:#073352 }
+
+.cards-accesos .card-acceso:hover, .cards-accesos-mobile .card-acceso:hover {border: 1px solid rgb(255,67,81); box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+
+.cards-accesos .card-acceso:hover p, .cards-accesos-mobile .card-acceso:hover p {color: rgb(255,67,81) }
+
+
+.cards-accesos .card-acceso:hover svg, .cards-accesos-mobile .card-acceso:hover svg{ fill: rgb(255,67,81)}
+
+
+/* ***** TRIGGERS CASOS ***** */
+
+.cards-accesos .triggers-accesos {margin-bottom: 50px; margin-top:-40px}
+
+.cards-accesos .acceso_text_only{ padding: 30px 20px; text-align: center; text-transform: uppercase; border-radius: 20px;   box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;  display: block;  font-size: 14px; font-weight: 500;
+    height: 100px;     text-decoration: none;    margin-bottom: 20px;  line-height: 50px}
+
+.cards-accesos .triggers-accesos p{ display: inline-block;  vertical-align: middle;  line-height: normal;}
+
+.cards-accesos .acceso_text_only[aria-expanded='false']:hover{background: #073352; color:#fff }
+
+/*.cards-accesos .acceso_text_only[aria-expanded='true']:hover{background:#fff; color: #073352 }*/
+
+.cards-accesos .acceso_text_only[aria-expanded='false'] { background:#fff; color: #073352 }
+.cards-accesos .acceso_text_only[aria-expanded='true'] { background: #073352; color: #ffffff }
+
+.cards-accesos .collapse {background:#eeeeee; margin-top:0px}
+
+.cards-accesos  h3.accesos {width: 100%; display: block}
+/* .cards-accesos h3.accesos span{font-size: 12px; display: block;} */
+
+.cards-accesos .accesos_grid{ padding:35px; }
+
+.cards-accesos .collapse .accesos_grid{ padding-left: 0; padding-right: 0}
+
+
+
+/* ***************** 21/07 CARDS COMPLEMENTOS  ********************** */
+
+.mod-card-container .row{margin-bottom: 20px!important}
+
+.mod-card-container .col-md-4, .mod-card-container .col-md-3{padding-right: 5px!important; padding-left:5px!important;} 
+
+.mod-card {height: 400px; background-size: contain;background-position: bottom center;background-repeat: no-repeat;border-radius: 10px;margin-bottom: 20px!important;}
+
+@media (max-width:768px){
+	.mod-card {height: auto;}
+}
+
+
+
+/* ****27/10/21 -- FORMATO REDUCIDO de 200px **** */
+
+.mod-card.shorter-mod{max-height: 200px; height: 200px;}
+.mod-card.shorter-mod h3, .mod-card.shorter-mod h4, .mod-card.shorter-mod p{margin-bottom:5px; margin-top:5px}
+.mod-card.shorter-mod h5{font-size: 1.1rem}
+.mod-card.shorter-mod svg{margin-bottom:15px}
+
+@media (max-width:990px){
+	.mod-card.shorter-mod h3{font-size: 20px}
+
+}
+
+
+.col-md-3 .mod-card{background-size: cover}
+
+/*background:linear-gradient(180deg, rgba(238,238,238,1) 20%, rgba(238,238,238,0.98) 50%, rgba(238,238,238,0) 100%);*/
+.content-mod-card{padding: 15px;padding-top:25px;text-align: center!important;background: white!important;border-top-left-radius: 10px;border-top-right-radius: 10px;}
+
+.col-md-3 .content-mod-card{ 
+	padding: 15px; padding-top:25px; text-align: center!important; background: white;
+	border-top-left-radius: 10px; border-top-right-radius: 10px; min-height: 70% 
+}
+
+.content-mod-card.pink{color: rgb(255,67,81)}
+
+.content-mod-card h4 {font-size: 20px; font-weight: normal; line-height: 130%; margin-left: 20px;margin-right: 20px;}
+
+.col-md-3  h3 {font-size: 25px; font-weight: normal; line-height: 130%; margin-left: 20px;margin-right: 20px;}
+
+
+.content-mod-card h4 strong{ font-weight: 800}
+
+/* .content-mod-card span {color: #666; display: block; font-size: 14px; margin-bottom: 20px; width: 100%} */
+
+.content-mod-card.pink h4 {color: rgb(255,67,81)}
+.content-mod-card.blue h4 {color: #131A45}
+.content-mod-card.black h4 {color: #000000}
+
+.content-mod-card .btn{position:absolute; bottom:45px; left:10%; right: 10%}
+
+.content-mod-card .btn {font-size: 16px; border-radius: 25px }
+.content-mod-card.pink .btn {background-color: rgb(255,67,81); color:#fff ; font-weight: 500 }
+.content-mod-card.blue .btn {background-color: #131A45  }
+.content-mod-card.black .btn {background-color: #000000 }
+
+.content-mod-card.pink .btn:hover {background-color:rgb(255,67,81); color: #ffffff }
+.content-mod-card.blue .btn:hover {background-color: #131A45  }
+.content-mod-card.black .btn:hover {background-color: #000000 }
+
+
+/**  AJUSTES PARA CARDS REVERSIBLES    **/
+
+.card-flip{position: relative}
+
+.card-back a{display: block; margin: 15px auto; color:  #131A45; padding:5px; width: fit-content; position:absolute; bottom:25px; left:10%; right: 10%; font-size: 14px }
+
+.col-md-3 .card-back a{font-size: 14px; left:3%; right:3%;  bottom:10px; }
+
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  /*height: auto;*/
+  margin: 0;
+  display: flow-root;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+   left:0;
+	right:0;
+  background-color:#eee;
+	display: none;
+}
+
+
+.card-container.hover .card-flip .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-container.hover  .card-flip .card-back {
+  transform: rotateY(0deg);
+	display: block
+}
+
+
+
+
+
+@media (max-width:750px){
+	
+	.cards-accesos-mobile{margin-bottom: 35px}
+	
+	.cards-accesos-mobile .card-acceso{  margin-bottom:15px}
+
+	.cards-accesos-mobile .col-md-6 { padding: 3px!important; padding-right: 3px; padding-left: 3px}
+
+	.cards-accesos-mobile .card-acceso p{  padding: 0 5px; font-size: 12px; }
+	
+	.mc-accesos .page-title h1{ font-size:25px}
+	.mc-accesos .page-title .h1{ font-size:25px}
+	
+	.cards-accesos   .accesos_grid  .col-md-3 { width:48%!important; padding-right: 5px;  padding-left: 5px;}
+
+	.cards-accesos .acceso_text_only{font-size: 13px; margin-bottom:15px; height: 70px; padding: 20px; padding-top:10px; line-height: 50px; }
+	
+	.cards-accesos  h3.accesos {margin-bottom: 25px}
+
+	.cards-accesos  .triggers-accesos .col-md-3{ width:48%!important; padding-right: 5px;  padding-left: 5px; }
+
+	.cards-accesos  .accesos_grid .card-acceso p{padding-left: 3px; padding-right:3px;font-weight: bold }
+	
+	.cards-accesos  .accesos_grid .card-acceso {margin-bottom:10px!important}
+	
+	.mc-accesos .breadcrumb::after{content: ''; width: 30%; height: 6px; background:  #073352; display: block; margin-top: 15px}
+	
+	.cards-accesos .collapse .container {padding:0; }
+	
+	.cards-accesos .collapse .container .card-acceso p{font-size: 11px}
+	
+	.mod-card {margin-bottom:20px}
+	
+	.content-mod-card h4{font-size:16px} 
+	
+	/* 27/10/21 -- formato corto de 200px */
+	.mod-card.shorter-mod h3{font-size:22px}
+	.mod-card.shorter-mod h4{font-size:22px}
+
+
+
+	
+}
+
+
+/* ******   FORMATO CARRUSEL   ****** */
+
+#cards-accesos {padding-top:45px; padding-bottom:45px; }
+
+.cards-accesos .carousel-control-next, .cards-accesos .carousel-control-prev, .cards-accesos-mobile .carousel-control-next, .cards-accesos-mobile .carousel-control-prev  {color:#0C2038;  width: 3%;}
+
+.cards-accesos  .carousel-control-next, .cards-accesos-mobile  .carousel-control-next {margin-right: -40px;}
+
+.cards-accesos  .carousel-control-prev, .cards-accesos-mobile  .carousel-control-prev {margin-left: -40px;}
+
+.cards-accesos .carousel-indicators, .cards-accesos-mobile .carousel-indicators{bottom:-40px}
+
+.cards-accesos .carousel-indicators li, .cards-accesos-mobile .carousel-indicators li { max-width: 10px; height: 10px; border-radius: 10px}
+
+.cards-accesos  .carousel-item, .cards-accesos-mobile  .carousel-item {background:#fff}
+
+.cards-accesos  .carousel-item, .cards-accesos-mobile  .carousel-item{background:transparent}
+
+.cards-accesos  .carousel-inner .carousel-item.active,
+
+.cards-accesos .carousel-inner .carousel-item-next,
+
+.cards-accesos .carousel-inner .carousel-item-prev {    display: flex; }
+
+
+@media (max-width:768px){
+	
+	.cards-accesos  .carousel-control-prev, .cards-accesos-mobile  .carousel-control-prev  {margin-left:-5px}
+	.cards-accesos  .carousel-control-next, .cards-accesos-mobile  .carousel-control-next {margin-right: -5px;}
+
+
+   .cards-accesos  .carousel-inner .carousel-item > div {
+        display: none;
+    }
+  .cards-accesos   .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+/* display 4 */
+
+@media (min-width: 768px) {
+    
+     .cards-accesos  .carousel-inner .carousel-item-right.active,
+     .cards-accesos .carousel-inner .carousel-item-next {
+      transform: translateX(24%);
+    }
+    
+     .cards-accesos  .carousel-inner .carousel-item-left.active, 
+    .cards-accesos   .carousel-inner .carousel-item-prev {
+      transform: translateX(24%);
+    }
+}
+
+@media (max-width:480px){
+	
+		.card-back a{display: block; margin: 15px auto; color:  #131A45; padding:5px; border-bottom:1px solid  #131A45;  bottom:10px; font-size: 14px  }
+	
+	
+}
+
+ .cards-accesos  .carousel-inner .carousel-item-right,
+ .cards-accesos  .carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+
+
+/****  RESETS  ****/
+.no-margin{margin:0!important}
+.no-padding{padding:0!important}
+/*section{padding-top: 25px; padding-bottom: 25px}*/
+

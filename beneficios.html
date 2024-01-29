@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficios test</title>
+    <link rel="stylesheet" href="css/Application_macro.css">
+    <link rel="stylesheet" href="css/Application_Macro_Accesos.css">
+    <link rel="stylesheet" href="css/Application_macro_beneficios.css">
+    <link rel="stylesheet" href="css/Application_macro_custom.css">
+    <link rel="stylesheet" href="css/Application_macro_custom_user_styles.css">
+    <link rel="stylesheet" href="css/Application_macro_header.css">
+    <link rel="stylesheet" href="css/Application_macro_operaciones_simples.css">
+    <link rel="stylesheet" href="css/cardsStyleSheet.css">
+    <link rel="stylesheet" href="css/FormPoincenotStyleSheet.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/jqueryuicss.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/vendors.css">
+
+</head>
+
+<body id="page-top"
+    class=" index mc-home mc-transparent mc-no-homebanking  mc-personas mc-home-no-mw mc-transparent-menu mc-header-bluelight">
+    <div id="ZN_2mgvsS6i0OY4z5A"><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+    <!--  ...   -->
+
+    <!--END WEBSITE FEEDBACK SNIPPET-->
+
+
+
+
+    <script type="text/javascript" src="aplicationmacrobeneficios.js"></script>
+    <script type="text/javascript">
+
+        function getCookie(cname) { /*OBTIENE LOS VALORES DE UNA COOKIE*/
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function setCookie(cname, cvalue) {
+            var d = new Date();
+            d.setHours(24, 0, 0, 0); // next midnignt
+            //console.log('d2' + d);
+            //var expires = "expires=" + d.toGMTString();
+            var expires = "expires=" + d;
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        $(document).ready(function () {
+            var CookiePersonalizacion = getCookie("BM-Personalizacion");
+            if (CookiePersonalizacion === "") {
+                setCookie("BM-Personalizacion", '');
+                var userId =
+                    dataLayer.push({ 'userId': userId });
+            }
+        });
+
+        //Inicia GeolocalizaciÃ³n
+        let geoPageCallback = (callback, container, lista, params) => {
+            let urlParams = validateParams();
+            let locacionActual = getLocation();
+            let keyProvincia = "";
+
+            if (urlParams.is && urlParams.params.get("ubicacion") != "" && urlParams.params.get("ubicacion") != null) {
+                keyProvincia = getProvinciaKey(urlParams.params.get("ubicacion"));
+            }
+            if (locacionActual && keyProvincia == "") {
+                keyProvincia = locacionActual.Provincia;
+            }
+            setProvincia(keyProvincia);
+            if (typeof callback === typeof (Function)) {
+                if (lista != null) {
+                    return callback(container, lista, params);
+                }
+                return callback(container, params);
+            }
+        }
+
+    </script>
+
+
+    <div class="mc-main-content mc-operaciones mc-beneficios">
+
+        <section class="mc-banner-beneficios no-padding section-beneficios" id="page-header">
+
+            <div class="row" id="main-title">
+                <h1>Los beneficios que buscás</h1>
+            </div>
+
+        </section>
+
+
+        <!-- ***********   BUSCADOR     ***********  -->
+        <style>
+            .ui-menu {
+                max-height: 300px;
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+        </style>
+
+        <section class="section-beneficios" id="buscador-beneficios">
+            <div class="container">
+                <form class="row" action="/beneficios/resultados">
+                    <label>
+                        <select name="ubicacion" id="ubicacion">
+                            <option value="CAPITAL FEDERAL">CAPITAL FEDERAL</option>
+                            <option value="BUENOS AIRES">BUENOS AIRES</option>
+                            <option value="CATAMARCA">CATAMARCA</option>
+                            <option value="CHACO">CHACO</option>
+                            <option value="CHUBUT">CHUBUT</option>
+                            <option value="CORDOBA">CORDOBA</option>
+                            <option value="CORRIENTES">CORRIENTES</option>
+                            <option value="ENTRE RIOS">ENTRE RIOS</option>
+                            <option value="FORMOSA">FORMOSA</option>
+                            <option value="JUJUY">JUJUY</option>
+                            <option value="LA PAMPA">LA PAMPA</option>
+                            <option value="LA RIOJA">LA RIOJA</option>
+                            <option value="MENDOZA">MENDOZA</option>
+                            <option value="MISIONES">MISIONES</option>
+                            <option value="NEUQUEN">NEUQUEN</option>
+                            <option value="RIO NEGRO">RIO NEGRO</option>
+                            <option value="SALTA">SALTA</option>
+                            <option value="SAN JUAN">SAN JUAN</option>
+                            <option value="SAN LUIS">SAN LUIS</option>
+                            <option value="SANTA CRUZ">SANTA CRUZ</option>
+                            <option value="SANTA FE">SANTA FE</option>
+                            <option value="SANTIAGO DEL ESTERO">SANTIAGO DEL ESTERO</option>
+                            <option value="TIERRA DEL FUEGO">TIERRA DEL FUEGO</option>
+                            <option value="TUCUMAN">TUCUMAN</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <select name="categoria" id="categoria">
+                            <option value="All">Todos los rubros</option>
+                            <option value="Asociación de Profesionales">Asociación de Profesionales</option>
+                            <option value="Automotor y Combustible">Automotor y Combustible</option>
+                            <option value="Barrios Privados">Barrios Privados</option>
+                            <option value="Cajas Previsionales">Cajas Previsionales</option>
+                            <option value="Circuito Gastronómico">Circuito Gastronómico</option>
+                            <option value="Clubes">Clubes</option>
+                            <option value="Compras Online">Compras Online</option>
+                            <option value="Consorcio - Administración">Consorcio - Administración</option>
+                            <option value="Débito Automático">Débito Automático</option>
+                            <option value="Dia de la Madre">Dia de la Madre</option>
+                            <option value="Día Del Niño">Día Del Niño</option>
+                            <option value="Día Del Padre">Día Del Padre</option>
+                            <option value="Electro y Tecnología">Electro y Tecnología</option>
+                            <option value="Entretenimiento y Cine">Entretenimiento y Cine</option>
+                            <option value="Espectáculos">Espectáculos</option>
+                            <option value="Fiestas">Fiestas</option>
+                            <option value="Gastronomía">Gastronomía</option>
+                            <option value="Heladerías">Heladerías</option>
+                            <option value="Hogar y Deco">Hogar y Deco</option>
+                            <option value="Hotelería">Hotelería</option>
+                            <option value="Indumentaria">Indumentaria</option>
+                            <option value="Instituciones Deportivas">Instituciones Deportivas</option>
+                            <option value="Instituciones Educativas">Instituciones Educativas</option>
+                            <option value="Librerías">Librerías</option>
+                            <option value="Niños y Jugueterías">Niños y Jugueterías</option>
+                            <option value="Otros beneficios">Otros beneficios</option>
+                            <option value="Paradores">Paradores</option>
+                            <option value="Pinturería">Pinturería</option>
+                            <option value="Profesionales">Profesionales</option>
+                            <option value="Salud y belleza">Salud y belleza</option>
+                            <option value="Selecta Gourmet">Selecta Gourmet</option>
+                            <option value="Shoppings y Tiendas">Shoppings y Tiendas</option>
+                            <option value="Supermercados">Supermercados</option>
+                            <option value="Suscripciones">Suscripciones</option>
+                            <option value="Turismo">Turismo</option>
+                            <option value="Varios">Varios</option>
+                            <option value="Venta Directa">Venta Directa</option>
+                            <option value="Verano">Verano</option>
+                            <option value="Vinculados a la Salud">Vinculados a la Salud</option>
+                            <option value="Vinotecas">Vinotecas</option>
+                            <option value="Vuelta Al Cole">Vuelta Al Cole</option>
+                        </select>
+                    </label>
+                    <label>
+                        <input type="text" name="beneficios" placeholder="Buscar ahorros y beneficios" id="buscar"
+                            class="ui-autocomplete-input" autocomplete="off">
+                    </label>
+
+                    <a class="mas-filtros" data-toggle="collapse" href="#mas-filtros" role="button"
+                        aria-expanded="false" aria-controls="mas-filtros">
+                        MÁS FILTROS
+                        <i><img src="/imagen/filtros.png" alt="Mas filtros"></i>
+                    </a>
+
+                    <div class="collapse" id="mas-filtros">
+                        <label><input type="text" name="localidad" placeholder="Localidad" value="" id="localidad"
+                                class="ui-autocomplete-input" autocomplete="off"></label>
+
+                        <label>
+                            <select name="dia-semana" id="dia-semana">
+
+                                <option value="7">Todos los días</option>
+                                <option value="8">Hoy</option>
+                                <option value="1">Lunes </option>
+                                <option value="2">Martes </option>
+                                <option value="3">Miércoles </option>
+                                <option value="4">Jueves </option>
+                                <option value="5">Viernes </option>
+                                <option value="6">Sábado </option>
+                                <option value="0">Domingo </option>
+
+                            </select>
+
+                        </label>
+                        <label>
+                            <select name="tarjeta" id="tarjeta">
+                                <option value="">Todas las Tarjetas</option>
+                                <option value="TD">Tarjeta de Debito</option>
+                                <option value="TC">Tarjeta de Crédito</option>
+                            </select>
+                        </label>
+                    </div>
+                    <input type="submit" value="Buscar" class="btn bg-color-18">
+                </form>
+            </div>
+        </section>
+
+        <!-- ***********  FIN DE  BUSCADOR       ***********  -->
+
+        <script defer="">
+
+            //Inicializa Valiables de servicios
+
+            urlServicios.url_servicio_categoria = "https://rgw.6ecd-3a9b81c9.us-south.ri1.apiconnect.appdomain.cloud/macro-beneficios/produccion/lista-categorias/lista-categorias";
+            urlServicios.url_servicio_localidades = "https://rgw.6ecd-3a9b81c9.us-south.ri1.apiconnect.appdomain.cloud/macro-beneficios/produccion/localidades-por-provincia/localidades?codigoIsoProvincia=";
+            urlServicios.url_servicio_predictivo = "https://rgw.6ecd-3a9b81c9.us-south.ri1.apiconnect.appdomain.cloud/macro-beneficios/produccion/beneficio-predictivo/consulta-beneficio-predictivo?cadena=";
+            urlServicios.url_servicio_client_id = " 1ccc929fe306b1334db5969cd4db4d19";
+
+            //Setea un default
+            if (provinciaActual == null) {
+                setProvincia('BuenosAires');
+            }
+
+            // Inserta Categorias en combo 
+
+            let insertaCategorias = (data) => {
+
+                let categorias = $('#categoria');
+                let principal = "", secundarias = "";
+                let urlParams = validateParams();
+                if (urlParams.is) {
+
+                    secundarias += ('<option value="All">Todos los rubros</option>');
+                    for (let i in data) {
+
+                        if (data[i].applyOnGeneral == true) {
+                            if (data[i].displayName == urlParams.params.get("categoria")) {
+                                principal += '<option value="' + data[i].displayName + '">' + data[i].displayName + '</option>';
+                            } else {
+                                secundarias += '<option value="' + data[i].displayName + '">' + data[i].displayName + '</option>';
+                            }
+                        }
+
+                    }
+
+                } else {
+
+                    principal += ('<option value="All">Todos los rubros</option>');
+                    for (let i in data) {
+                        secundarias += '<option value="' + data[i].displayName + '">' + data[i].displayName + '</option>';
+                    }
+                }
+                categorias.empty();
+                categorias.append(principal + secundarias);
+            }
+
+            //Se ejecuta en pagina de resultados
+            let sendForm = () => {
+                let filters = {
+                    is: true,
+                    params: {
+
+                        categoria: $("#categoria").val(),
+                        beneficios: $("#buscar").val(),
+                        localidad: $("#localidad").val(),
+                        dia: $("#dia-semana").val(),
+                        tarjeta: $("#tarjeta").val()
+                    }
+                }
+                initBeneficios("main-beneficios-container", filters);
+            }
+
+            //Obtiene Categorias
+            getCategorias().then(res => { return categorias = res; });
+
+            //Obtiene Localidades por provincia
+            getLocalidades().then(res => { return localidades = res; });
+
+            //Ejecuta Inserta Categorias
+            insertaCategorias(categorias);
+
+            // Inserta UbicaciÃ³n Actual
+            $("#ubicacion").val(provinciaActual.provinceNeutral);
+
+            // Inserta Pedicitivo Provincias
+            /*$('#ubicacion').autocomplete({
+                source: getProvincias()
+            });*/
+
+
+            // Inserta Predictivo Localidades
+            $("#localidad").autocomplete({
+                source: getLocalidadName()
+            });
+
+            //Inserta Predictivo Beneficios
+
+            $("#buscar").autocomplete({
+
+                source: (request, response) => {
+
+                    let url = urlServicios.url_servicio_predictivo + $("#buscar").val() + "&province=" + provinciaActual.provinceIsoCode;
+
+                    $.ajax({
+                        "async": true,
+                        "crossDomain": true,
+                        "url": url,
+                        "method": "GET",
+                        "headers": {
+                            "Accept": "application/json",
+                            "Cache-Control": "no-cache",
+                            "x-ibm-client-id": urlServicios.url_servicio_client_id
+                        }
+                    }).done(function (data) {
+                        response(data);
+                    });
+                }
+            });
+
+            $('#ubicacion').change(() => {
+                setProvincia(getProvinciaKey($("#ubicacion").val()));
+                getLocalidades().then(res => { return localidades = res; });
+                if ($('.location span').length > 0) {
+                    try {
+                        $('.location span').text($("#ubicacion").val());
+                    } catch (e) { }
+                }
+
+                $("#localidad").autocomplete({
+                    source: getLocalidadName()
+                });
+
+                $("#buscar").val("");
+                $("#buscar").autocomplete({
+                    source: (request, response) => {
+                        let url = urlServicios.url_servicio_predictivo + $("#buscar").val() + "&province=" + provinciaActual.provinceIsoCode;
+                        $.ajax({
+
+                            "async": true,
+                            "crossDomain": true,
+                            "url": url,
+                            "method": "GET",
+                            "headers": {
+                                "Accept": "application/json",
+                                "Cache-Control": "no-cache",
+                                "x-ibm-client-id": urlServicios.url_servicio_client_id
+
+                            }
+
+                        }).done(function (data) {
+                            response(data);
+                        });
+                    }
+                });
+            });
+
+        </script>
+
+
+        <!-- ***********   CARDS BENEFICIOS - GRILLA + CARRUSEL     ***********  -->
+
+        <section class="section-beneficios" id="main-content beneficios-ppal">
+            <div class="container">
+
+                <div class="row" id="main-title">
+                    <h1>Oportunidades cerca tuyo:</h1>
+                    <script>
+                        let goProvincia = () => {
+                            $("#ubicacion").focus();
+                        }
+                    </script>
+                    <a href="javascript:void(0)" onclick="goProvincia()"><i><img src="/imagen/map-marker-blue.png"
+                                alt=""></i> ¿Querés indicar otra ubicación? </a>
+                </div>
+
+            </div>
+
+            <div id="main-beneficios-container" class="container">
+                <div class="cards-beneficios">
+                    <div class="row" style="align-items:center;justify-content:center;">
+
+
+                        <div id="gas" class=" card card-hide">
+                            <div class="card-body">
+                                <div style="font-size: 12px;color: #053575; display: flex; justify-content: space-between;">
+                                    <span>Educación</span>
+                                    <span></span>
+                                </div>
+
+                                <div class="card-logo-comercio"><img
+                                    src="https://beneficios-macro.s3.us-south.cloud-object-storage.appdomain.cloud/1000rosanegra_052022.png"
+                                    alt="undefined" style="max-width:100%; height:100px;">
+                                </div>
+                                    
+                                <!-- NUEVO H4 -->
+                                <div style="min-height: 60px; display: flex;align-items: center; margin: 8px 0px" >
+                                    <h4 style="width: 100%; margin: 0px;font-size: 14px;font-weight: 600; line-height: 30px; color: #053575;">Colegio Beata Maria Ana de Jesús </h4>
+                                </div>
+                                
+
+                                <h5 class="card-title"><strong>3 cuotas</strong><br>sin interés</h5><a class="card-link"
+                                    href="/beneficios/beneficio?id=187O BEER AND COFFEE">ver más</a>
+
+                                    <!-- <h5 class="card-title"><b>20%</b> de ahorro y <b>6 cuotas</b> sin interés</h5> -->
+
+                                <div class="card-cartera"></div>
+                            </div>
+                        </div>
+
+
+                        <div id="gas2" class=" card card-hide">
+                            <div class="card-body">
+                                <div style="font-size: 12px;color: #053575; display: flex; justify-content: space-between;">
+                                    <span>Gastronomía</span>
+                                    <span>MODO</span>
+                                </div>
+
+                                <div class="card-logo-comercio"><img
+                                    src="https://beneficios-macro.s3.us-south.cloud-object-storage.appdomain.cloud/alba%20pinamar%20restaurant.png"
+                                    alt="undefined" style="max-width:100%; height:100px;">
+                                </div>
+                                    
+                                <!-- NUEVO H4 -->
+                                <div style="min-height: 60px; display: flex;align-items: center; margin: 8px 0px" >
+                                    <h4 style="width: 100%; margin: 0px;font-size: 14px;font-weight: 600; line-height: 30px; color: #053575;">La rosa negra</h4>
+                                </div>
+                                
+
+                                <h5 class="card-title"><strong>30%</strong><br>de ahorro</h5>
+                                <a class="card-link" href="/beneficios/beneficio?id=187O BEER AND COFFEE">Ver más</a>
+
+                                <div class="card-cartera"></div>
+                            </div>
+                        </div>
+
+
+                        <div id="1000rosanegra_052022" class=" card card-hide">
+                            <div class="card-body"><a class="card-share" data-toggle="collapse"
+                                    href="#share-box-1000rosanegra_052022-255" role="button" aria-expanded="false"
+                                    aria-controls="share-box-1000rosanegra_052022-255"><i><img
+                                            src="/imagen/share-card.png" alt="compartir"></i><span
+                                        style="margin-right:20px">Compartir</span>
+                                    <div class="collapse share-box" id="share-box-1000rosanegra_052022-255"><a
+                                            class="mc-share-btn mc-share-fb1000rosanegra_052022-255" href="#"><img
+                                                src="/imagen/icon-fb.svg" alt="Compartir en Facebook"></a><a
+                                            class="mc-share-btn mc-share-li1000rosanegra_052022-255" href="#"><img
+                                                src="/imagen/icon-li.svg" alt="Compartir en LinkedIn"></a><a
+                                            class="mc-share-btn mc-share-tw1000rosanegra_052022-255" href="#"><img
+                                                src="/imagen/icon-twt.svg" alt="Compartir en Twitter"></a><a
+                                            class="mc-share-btn mc-share-mail1000rosanegra_052022-255" href="#"><img
+                                                src="/imagen/icon-envelop.svg" alt="Compartir por Email"></a><a
+                                            class="mc-share-btn hidden-sm-up mc-share-wsp1000rosanegra_052022-255"
+                                            href="#"><img src="/imagen/whatsapp.svg" alt="Compartir por Whatsapp"></a>
+                                    </div>
+                                </a>
+                                <div class="card-tag-rubro bg-color-22"><img src="/imagen/rubro_gas/gas.png"
+                                        style="max-width: 33px;" alt="Gastronomía"></div>
+                                <div class="card-logo-comercio"><img
+                                        src="https://beneficios-macro.s3.us-south.cloud-object-storage.appdomain.cloud/1000rosanegra_052022.png"
+                                        alt="undefined" style="max-width:100%; height:100px;"></div>
+                                <h6 class="card-title">GASTRONOMÍA</h6>
+                                <h5 class="card-title"><strong>30%</strong><br>de ahorro</h5><a class="card-link"
+                                    href="/beneficios/beneficio?id=1OOO ROSA NEGRA">VER MÁS</a>
+                                <div class="card-cartera"></div>
+                            </div>
+                        </div>
+                        <div id="gas" class=" card card-hide">
+                            <div class="card-body"><a class="card-share" data-toggle="collapse"
+                                    href="#share-box-gas-387" role="button" aria-expanded="false"
+                                    aria-controls="share-box-gas-387"><i><img src="/imagen/share-card.png"
+                                            alt="compartir"></i><span style="margin-right:20px">Compartir</span>
+                                    <div class="collapse share-box" id="share-box-gas-387"><a
+                                            class="mc-share-btn mc-share-fbgas-387" href="#"><img
+                                                src="/imagen/icon-fb.svg" alt="Compartir en Facebook"></a><a
+                                            class="mc-share-btn mc-share-ligas-387" href="#"><img
+                                                src="/imagen/icon-li.svg" alt="Compartir en LinkedIn"></a><a
+                                            class="mc-share-btn mc-share-twgas-387" href="#"><img
+                                                src="/imagen/icon-twt.svg" alt="Compartir en Twitter"></a><a
+                                            class="mc-share-btn mc-share-mailgas-387" href="#"><img
+                                                src="/imagen/icon-envelop.svg" alt="Compartir por Email"></a><a
+                                            class="mc-share-btn hidden-sm-up mc-share-wspgas-387" href="#"><img
+                                                src="/imagen/whatsapp.svg" alt="Compartir por Whatsapp"></a></div>
+                                </a>
+                                <div class="card-tag-rubro bg-color-22"><img src="/imagen/rubro_gas/gas.png"
+                                        style="max-width: 33px;" alt="Gastronomía"></div>
+                                <h5 class="card-title"
+                                    style="max-width: 100%; height: 100px; margin-top: 10px; padding-top: 45px; color: #092f57;font-weight: bold;font-size: 1.0rem;">
+                                    1OOO ROSA NEGRA AMEX</h5>
+                                <h6 class="card-title">GASTRONOMÍA</h6>
+                                <h5 class="card-title"><strong>40%</strong><br>de ahorro</h5><a class="card-link"
+                                    href="/beneficios/beneficio?id=1OOO ROSA NEGRA AMEX">VER MÁS</a>
+                                <div class="card-cartera bg-color-0"><img src="/imagen/listing-logo-macro-selecta.png"
+                                        alt="Cartera Selecta" style="height: 15px;"></div>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+
+                <div class="row justify-content-center"><a class="btn bg-color-18" data-toggle="collapse"
+                        href="#mas-beneficios" role="button" aria-expanded="false" aria-controls="mas-categorias">Ver
+                        más beneficios</a></div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <script>
+        (function () {
+            $.fn.datepicker.dates['es'] = {
+                days: ["Domingo", "Lunes", "Martes", "MiÃ©rcoles", "Jueves", "Viernes", "SÃ¡bado"],
+                daysShort: ["Dom", "Lun", "Mar", "MiÃ©", "Jue", "Vie", "SÃ¡b"],
+                daysMin: ["DOM", "LUN", "MAR", "MIE", "JUE", "VIE", "SAB"],
+                months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+                monthsShort: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dec"],
+                today: "Hoy",
+                clear: "VacÃ­o",
+                format: "dd/mm/yyyy",
+                titleFormat: "MM yyyy",
+                weekStart: 0
+            };
+            $("#calendar-birthday").datepicker({
+                language: 'es',
+                startView: 'decades',
+                orientation: 'bottom',
+                autoclose: true,
+                templates: {
+                    leftArrow: '<img src="/imagen/arrow-calendar-left.png">',
+                    rightArrow: '<img src="/imagen/arrow-calendar-right.png">'
+                }
+            });
+
+            $(window).resize(function () {
+                //resize just happened, pixels changed
+                showInfoFooter();
+            });
+
+            showInfoFooter();
+
+        })();
+
+        function showInfoFooter() {
+            var screenWidth = window.innerWidth;
+            if (screenWidth <= 1199) {
+                // On mobile
+                var objInfoFooterMobile = $("#infoFooterMobile");
+                var objInfoFooterDesktop = $("#infoFooterDesktop");
+
+                objInfoFooterMobile.css("display", "block");
+                objInfoFooterDesktop.css("display", "none");
+            } else if (screenWidth >= 1200) {
+                // On desktop
+                var objInfoFooterDesktop = $("#infoFooterDesktop");
+                var objInfoFooterMobile = $("#infoFooterMobile");
+
+                objInfoFooterDesktop.css("display", "block");
+                objInfoFooterMobile.css("display", "none");
+            }
+        }
+
+        // Footer accordion
+        var screenWidth = window.innerWidth;
+        var $footer = $('.mc-slide-toggle');
+        var $copyright = $('.mc-slide-toggle-copyright');
+        $footer.add($copyright).on('click', function (event) {
+            $('.mc-sublist li a').on('click', function (event) {
+                event.stopPropagation();
+            });
+            var childLink = $(this).children('.nav-link');
+            var classes = $(this).attr('class');
+            if (classes.indexOf("opened") > 0) {
+                if (classes.indexOf('canales-atencion') > 0) {
+                    dataLayer.push({ 'event': 'trackEvent', 'eventCategory': 'menu-footer', 'eventAction': 'cerrar', 'eventLabel': 'canales-de-atencion' });
+                }
+                else if (classes.indexOf('consulta-comisiones') > 0) {
+                    dataLayer.push({ 'event': 'trackEvent', 'eventCategory': 'menu-footer', 'eventAction': 'cerrar', 'eventLabel': 'consulta-comisiones' });
+                }
+                else if (classes.indexOf('informacion-importante') > 0) {
+                    dataLayer.push({ 'event': 'trackEvent', 'eventCategory': 'menu-footer', 'eventAction': 'cerrar', 'eventLabel': 'info-importante' });
+                }
+                $(this).removeClass("opened");
+            }
+            else {
+                if (classes.indexOf('canales-atencion') > 0) {
+                    dataLayer.push({ 'event': 'trackEvent', 'eventCategory': 'menu-footer', 'eventAction': 'desplegar', 'eventLabel': 'canales-de-atencion' });
+                }
+                else if (classes.indexOf('consulta-comisiones') > 0) {
+                    dataLayer.push({ 'event': 'trackEvent', 'eventCategory': 'menu-footer', 'eventAction': 'desplegar', 'eventLabel': 'consulta-comisiones' });
+                }
+                else if (classes.indexOf('informacion-importante') > 0) {
+                    dataLayer.push({ 'event': 'trackEvent', 'eventCategory': 'menu-footer', 'eventAction': 'desplegar', 'eventLabel': 'info-importante' });
+                }
+                $(this).addClass("opened");
+            }
+            //alert(childLink.html());
+            if (screenWidth <= 1199) {
+                // On mobile
+                var clickedElement = event.target;
+                var $sublist = $(clickedElement).siblings('.mc-sublist');
+                if (!$sublist.length) {
+                    $sublist = $(clickedElement).find('.mc-sublist');
+                }
+                if ($sublist.css('display') === 'block') {
+                    $('footer .mc-arrow__icon').removeClass('mc-arrow__open');
+                    $('footer .mc-sublist').slideUp().stop();
+                } else {
+                    $('footer .mc-sublist').slideUp();
+                    $('footer .mc-arrow__icon').addClass('mc-arrow__open');
+                }
+                $(this).children('.mc-sublist').slideToggle('fast', function () {
+                    // scroll to bottom to visualize footer
+                    $('html, body').animate({ scrollTop: $(document).height() });
+                });
+                $(this).children('footer .mc-arrow__icon').toggleClass('mc-arrow__open');
+                return false;
+            } else if (screenWidth >= 1200) { // On desktop
+                toggleMenu(event.target);
+                /*var $otherMenu = $(event.target).closest('.mc-menu-container').siblings('.mc-menu-container');
+                if($otherMenu.hasClass('mc-menu-container--taller')) {
+                    toggleMenu($otherMenu.find('a.nav-link')[0]);
+                }*/
+                return false;
+            }
+        });
+        function toggleMenu(menu) {
+            var $target = $(menu).parent();
+            var $clickedMenu = $target.closest('.mc-menu-container');
+            var $toggleArrow = $target.parent().find('.mc-arrow__icon');
+            var $sublist = $clickedMenu.find('.mc-sublist');
+            var tallerFooter = 'mc-menu-container--taller';
+            $toggleArrow.toggleClass('mc-arrow__open');
+            $sublist.slideToggle('fast', function () {
+                // scroll to bottom to visualize footer
+                $('html, body').animate({ scrollTop: $(document).height() });
+            });
+            $clickedMenu.toggleClass(tallerFooter);
+        }
+    </script>
+
+    <script type="text/javascript">
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "https://logo.prismasystems.com.ar/macro/logomacro.html");
+        ifrm.style.width = "0px";
+        ifrm.style.height = "0px";
+        document.body.appendChild(ifrm);
+    </script><iframe src="https://logo.prismasystems.com.ar/macro/logomacro.html"
+        style="width: 0px; height: 0px;"></iframe>
+
+
+
+
+
+
+
+
+
+    <div id="cboxOverlay" style="display: none;"></div>
+    <div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;">
+        <div id="cboxWrapper">
+            <div>
+                <div id="cboxTopLeft" style="float: left;"></div>
+                <div id="cboxTopCenter" style="float: left;"></div>
+                <div id="cboxTopRight" style="float: left;"></div>
+            </div>
+            <div style="clear: left;">
+                <div id="cboxMiddleLeft" style="float: left;"></div>
+                <div id="cboxContent" style="float: left;">
+                    <div id="cboxTitle" style="float: left;"></div>
+                    <div id="cboxCurrent" style="float: left;"></div><button type="button"
+                        id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button"
+                        id="cboxSlideshow"></button>
+                    <div id="cboxLoadingOverlay" style="float: left;"></div>
+                    <div id="cboxLoadingGraphic" style="float: left;"></div>
+                </div>
+                <div id="cboxMiddleRight" style="float: left;"></div>
+            </div>
+            <div style="clear: left;">
+                <div id="cboxBottomLeft" style="float: left;"></div>
+                <div id="cboxBottomCenter" style="float: left;"></div>
+                <div id="cboxBottomRight" style="float: left;"></div>
+            </div>
+        </div>
+        <div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div>
+    </div><iframe id="_hjSafeContext_93694539" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="about:blank"
+        style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe>
+    <script type="text/javascript"
+        src="https://zn2mgvss6i0oy4z5a-bancomacro.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_2mgvsS6i0OY4z5A"></script>
+
+
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib prefix="cs" uri="futuretense_cs/ftcs1_0.tld" %>
+        <%@ taglib prefix="ics" uri="futuretense_cs/ics.tld" %>
+            <%@ taglib prefix="render" uri="futuretense_cs/render.tld" %>
+                <%@ taglib prefix="fragment" uri="futuretense_cs/fragment.tld" %>
+
+                    <cs:ftcs><%-- Modulo/BeneficiosSliderResultadosTemplate --%>
+
+                            <%-- Record dependencies for the Template --%>
+                                <ics:if condition='<%=ics.GetVar("tid")!=null%>'>
+                                    <ics:then>
+                                        <render:logdep cid='<%=ics.GetVar("tid")%>' c="Template" />
+                                    </ics:then>
+                                </ics:if>
+
+                                <!-- *********** SLIDER BENEFICIOS  ***********  -->
+                                <section class="section-beneficios" id="beneficios-mas-buscados">
+                                    <div class="container">
+                                        <c:if test="${not empty asset.Titulo}">
+                                            <div class="row">
+                                                <c:if test="${asset.Geolocalizacion !='si'}">
+                                                    <div class="col-md-12 mc-title-container-lateral">
+                                                        <h2>${asset.Titulo}</h2>
+                                                        <h4>${asset.Subtitulo}</h4>
+                                                    </div>
+                                                </c:if>
+                                                <c:if test="${asset.Geolocalizacion =='si'}">
+                                                    <div class="container"
+                                                        style="padding-top:0px; padding-bottom: 0px;">
+                                                        <c:if test="${not empty asset.Titulo}">
+                                                            <div class="col-md-12 mc-title-container-lateral"
+                                                                id="titulo-geo-${asset.id}"></div>
+                                                        </c:if>
+                                                    </div>
+                                                </c:if>
+                                            </div>
+                                        </c:if>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="cards-beneficios  mx-auto my-auto" id="contenedorSlider${asset.id}">
+                                            <div id="waitcards"
+                                                class="carousel slide carousel-multi-item carousel-beneficios"
+                                                data-ride="carousel" wrap="true">
+                                                <div id="beneficioswait" class="cards-beneficios d-md-block d-sm-none">
+
+                                                    <div class="row">
+
+                                                        <div id="beneficioswaitcard1" class="card card-wait"
+                                                            style="width: 15rem;background-color: #eeee;">
+
+                                                            <div class="card-body">
+
+                                                                <div class="card-logo-comercio">
+
+                                                                    <img src="/imagen/loading_azul.svg"
+                                                                        alt="beneficios-loading"
+                                                                        style="max-width:25%;height: 100%;margin-top: 35px;">
+
+                                                                </div>
+
+                                                                <h6 class="card-title" style="margin-top: 71px;"></h6>
+
+                                                                <h5 class="card-title"></h5>
+
+
+
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                        <div id="beneficioswaitcard2" class="card card-wait"
+                                                            style="width: 15rem;background-color: #eeee;">
+
+                                                            <div class="card-body">
+
+                                                                <div class="card-logo-comercio">
+
+                                                                    <img src="/imagen/loading_azul.svg"
+                                                                        alt="beneficios-loading"
+                                                                        style="max-width:25%;height: 100%;margin-top: 35px;">
+
+                                                                </div>
+
+                                                                <h6 class="card-title" style="margin-top: 71px;"></h6>
+
+                                                                <h5 class="card-title"></h5>
+
+
+
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                        <div id="beneficioswaitcard3" class="card card-wait"
+                                                            style="width: 15rem;background-color: #eeee;">
+
+                                                            <div class="card-body">
+
+                                                                <div class="card-logo-comercio">
+
+                                                                    <img src="/imagen/loading_azul.svg"
+                                                                        alt="beneficios-loading"
+                                                                        style="max-width:25%;height: 100%;margin-top: 35px;">
+
+                                                                </div>
+
+                                                                <h6 class="card-title" style="margin-top: 71px;"></h6>
+
+                                                                <h5 class="card-title"></h5>
+
+
+
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                        <div id="beneficioswaitcard4" class="card card-wait"
+                                                            style="width: 15rem;background-color: #eeee;">
+
+                                                            <div class="card-body">
+
+                                                                <div class="card-logo-comercio">
+
+                                                                    <img src="/imagen/loading_azul.svg"
+                                                                        alt="beneficios-loading"
+                                                                        style="max-width:25%;height: 100%;margin-top: 35px;">
+
+                                                                </div>
+
+                                                                <h6 class="card-title" style="margin-top: 71px;"></h6>
+
+                                                                <h5 class="card-title"></h5>
+
+
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </section>
+
+                                <!-- *********** FIN SLIDER BENEFICIOS ***********  -->
+                                <!-- ***********    FIN CARDS BENEFICIOS - GRILLA + CARRUSEL       ***********  -->
+
+                                <script>
+                                    function updateTitleGeo() {
+                                        let tituloGeo${ asset.id } = "${asset.Titulo}";
+                                        $("#titulo-geo-${asset.id}").html("<h2 style='text-align:center;font-weigth:bold'>" + tituloGeo${ asset.id }.replace("<<Provincia>>", "<label style='color: rgb(255,67,81);'>" + provinciaActual.provinceDisplayName + "</label>") + "</h2>");
+                                        $("contenedorSlider${asset.id}").remove();
+                                        initSliderGeo("contenedorSlider${asset.id}");
+
+                                    }
+
+                                    urlServicios.url_servicio_client_id = "${asset.Endpoint_ClientID}";
+                                    urlServicios.url_servicio_categoria = "${asset.url_categorias}";
+                                    urlServicios.url_servicio_promociones_lista = "${asset.url_Beneficios}?idLista=";
+                                    urlServicios.url_servicio_logo = "${asset.url_logo}";
+                                    urlServicios.url_servicio_promociones = "${asset.url_Beneficios}";
+                                    urlServicios.url_endpoint = "${asset.URL}";
+
+                                    //Obtiene Categorias
+                                    getCategorias().then(res => { return categorias = res; });
+
+                                    if ("${asset.Geolocalizacion}" == "si") {
+                                        let locacionActual = getLocation();
+                                        let keyProvincia = "";
+                                        if (locacionActual && keyProvincia == "") {
+                                            keyProvincia = locacionActual.Provincia;
+                                            setProvincia(keyProvincia);
+                                        }
+
+                                        updateTitleGeo();
+
+                                    } else {
+                                        initSlider("contenedorSlider${asset.id}", "${asset.lista}", "${asset.Geolocalizacion}");
+                                    }
+
+
+
+                                </script>
+
+
+                    </cs:ftcs>

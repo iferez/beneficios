@@ -1,0 +1,253 @@
+:root {
+	--color-principal-azul: rgb(0,48,87);
+	--color-secundario-azul: rgb(32,58,233);
+	--color-neutro-gris-calido: rgb(216,215,214);
+	--color-neutro-negro: rgb(7,19,25);
+	--color-neutro-gris: rgb(234,232,229);
+	--color-selecta-dorado: rgb(201,183,135);
+	--color-selecta-gris: rgb(137,139,140);
+	--color-complementario-rosa: rgb(255,140,197);
+	--color-complementario-mostaza: rgb(255,198,41);
+	--color-complementario-rojo: rgb(255,67,81);
+	--color-complementario-amarillo: rgb(253,215,86);
+	--color-complementario-celeste: rgb(0,166,232);
+	--color-complementario-verde: rgb(0,172,105);
+	--color-complementario-turquesa: rgb(107,196,232);
+	--color-complementario-esmeralda: rgb(116,205,128);
+}
+
+/*Background colors*/
+
+.color-bg-white {    background-color: white !important;}
+.color-bg-white:hover {    color: white !important;}
+
+.color-bg-red {    background-color: red !important;}
+.color-bg-red:hover {    color: red !important;}
+
+.color-bg-blue {    background-color: blue !important;}
+.color-bg-blue:hover {    color: blue !important;}
+
+.color-bg-green {    background-color: green !important;}
+.color-bg-green:hover {    color: green !important;}
+
+.color-bg-yellow {    background-color: yellow !important;}
+.color-bg-yellow:hover {    color: yellow !important;}
+
+.color-bg-azul-visa {    background-color: #1a1f71 !important;}
+.color-bg-azul-visa:hover {    color: #1a1f71 !important;}
+
+.color-bg-obispo {    background-color: #981e97 !important;}
+.color-bg-obispo:hover {    color: #981e97 !important;}
+
+.color-bg-dorado-selecta {    background-color: var(--color-selecta-dorado) !important;}
+.color-bg-dorado-selecta:hover {    color: var(--color-selecta-dorado) !important;}
+
+/* Background colors - Paleta de colores */
+
+.color-bg-principal-azul {    background-color: var(--color-principal-azul) !important;}
+.color-bg-principal-azul:hover {    color: var(--color-principal-azul) !important; border-color: var(--color-principal-azul) !important;}
+.color-bg-principal-azul-solido {    background-color: var(--color-principal-azul) !important;}
+
+.color-bg-secundario-azul {    background-color: var(--color-secundario-azul) !important;}
+.color-bg-secundario-azul:hover {    color: var(--color-secundario-azul) !important; border-color: var(--color-secundario-azul) !important;}
+.color-bg-secundario-azul-solido {    background-color: var(--color-secundario-azul) !important;}
+
+.color-bg-neutro-gris-calido {    background-color: var(--color-neutro-gris-calido) !important;}
+.color-bg-neutro-gris-calido:hover {    color: var(--color-neutro-gris-calido) !important; border-color: var(--color-neutro-gris-calido) !important;}
+.color-bg-neutro-gris-calido-solido {    background-color: var(--color-neutro-gris-calido) !important;}
+.color-bg-neutro-negro {    background-color: var(--color-neutro-negro) !important;}
+.color-bg-neutro-negro:hover {    color: var(--color-neutro-negro) !important; border-color: var(--color-neutro-negro) !important;}
+.color-bg-neutro-negro-solido {    background-color: var(--color-neutro-negro) !important;}
+.color-bg-neutro-gris {    background-color: var(--color-neutro-gris) !important;}
+.color-bg-neutro-gris:hover {    color: var(--color-neutro-gris) !important; border-color: var(--color-neutro-gris) !important;}
+.color-bg-neutro-gris-solido {    background-color: var(--color-neutro-gris) !important;}
+
+.color-bg-selecta-dorado {    background-color: var(--color-selecta-dorado) !important;}
+.color-bg-selecta-dorado:hover {    color: var(--color-selecta-dorado) !important; border-color: var(--color-selecta-dorado) !important;}
+.color-bg-selecta-dorado-solido {    background-color: var(--color-selecta-dorado) !important;}
+.color-bg-selecta-gris {    background-color: var(--color-selecta-gris) !important;}
+.color-bg-selecta-gris:hover {    color: var(--color-selecta-gris) !important; border-color: var(--color-selecta-gris) !important;}
+.color-bg-selecta-gris-solido {    background-color: var(--color-selecta-gris) !important;}
+
+.color-bg-complementario-rosa {    background-color: var(--color-complementario-rosa) !important;}
+.color-bg-complementario-rosa:hover {    color: var(--color-complementario-rosa) !important; border-color: var(--color-complementario-rosa) !important;}
+.color-bg-complementario-rosa-solido {    background-color: var(--color-complementario-rosa) !important;}
+.color-bg-complementario-rojo {    background-color: var(--color-complementario-rojo) !important;}
+.color-bg-complementario-rojo:hover {    color: var(--color-complementario-rojo) !important; border-color: var(--color-complementario-rojo) !important;}
+.color-bg-complementario-rojo-solido {    background-color: var(--color-complementario-rojo) !important;}
+.color-bg-complementario-celeste {    background-color: var(--color-complementario-celeste) !important;}
+.color-bg-complementario-celeste:hover {    color: var(--color-complementario-celeste) !important; border-color: var(--color-complementario-celeste) !important;}
+.color-bg-complementario-celeste-solido {    background-color: var(--color-complementario-celeste) !important;}
+.color-bg-complementario-turquesa {    background-color: var(--color-complementario-turquesa) !important;}
+.color-bg-complementario-turquesa:hover {    color: var(--color-complementario-turquesa) !important; border-color: var(--color-complementario-turquesa) !important;}
+.color-bg-complementario-turquesa-solido {    background-color: var(--color-complementario-turquesa) !important;}
+.color-bg-complementario-mostaza {    background-color: var(--color-complementario-mostaza) !important;}
+.color-bg-complementario-mostaza:hover {    color: var(--color-complementario-mostaza) !important; border-color: var(--color-complementario-mostaza) !important;}
+.color-bg-complementario-mostaza-solido {    background-color: var(--color-complementario-mostaza) !important;}
+.color-bg-complementario-amarillo {    background-color: var(--color-complementario-amarillo) !important;}
+.color-bg-complementario-amarillo:hover {    color: var(--color-complementario-amarillo) !important; border-color: var(--color-complementario-amarillo) !important;}
+.color-bg-complementario-amarillo-solido {    background-color: var(--color-complementario-amarillo) !important;}
+.color-bg-complementario-verde {    background-color: var(--color-complementario-verde) !important;}
+.color-bg-complementario-verde:hover {    color: var(--color-complementario-verde) !important; border-color: var(--color-complementario-verde) !important;}
+.color-bg-complementario-verde-solido {    background-color: var(--color-complementario-verde) !important;}
+.color-bg-complementario-esmeralda {    background-color: var(--color-complementario-esmeralda) !important;}
+.color-bg-complementario-esmeralda:hover {    color: var(--color-complementario-esmeralda) !important; border-color: var(--color-complementario-esmeralda) !important;}
+.color-bg-complementario-esmeralda-solido {    background-color: var(--color-complementario-esmeralda) !important;}
+
+/*Text Colors*/
+
+.color-txt-white {    color: white !important;}
+.color-txt-white:hover {    background-color: white !important;}
+
+.color-txt-red {    color: red !important;}
+.color-txt-red:hover {    background-color: red !important;}
+
+.color-txt-blue {    color: blue !important;}
+.color-txt-blue:hover {    background-color: blue !important;}
+
+.color-txt-green {    color: green !important;}
+.color-txt-green:hover {    background-color: green !important;}
+
+.color-txt-yellow {    color: yellow !important;}
+.color-txt-yellow:hover {    background-color: yellow !important;}
+
+.color-txt-azul-visa {    color: #1a1f71 !important;}
+.color-txt-azul-visa:hover {    background-color: #1a1f71 !important;}
+
+.color-txt-obispo {    color: #981e97 !important;}
+.color-txt-obispo:hover {    background-color: #981e97 !important;}
+
+.color-txt-dorado-selecta {    color: var(--color-selecta-dorado) !important;}
+.color-txt-dorado-selecta:hover {    background-color: var(--color-selecta-dorado) !important;}
+
+/* Text colors - Paleta de colores */
+
+.color-txt-principal-azul {    color: var(--color-principal-azul) !important;}
+.color-txt-principal-azul:hover {    background-color: var(--color-principal-azul) !important;}
+.color-txt-principal-azul-solido {    color: var(--color-principal-azul) !important;}
+
+.color-txt-secundario-azul {    color: var(--color-secundario-azul) !important;}
+.color-txt-secundario-azul:hover {    background-color: var(--color-secundario-azul) !important;}
+.color-txt-secundario-azul-solido {    color: var(--color-secundario-azul) !important;}
+
+.color-txt-neutro-gris-calido {    color: var(--color-neutro-gris-calido) !important;}
+.color-txt-neutro-gris-calido:hover {    background-color: var(--color-neutro-gris-calido) !important;}
+.color-txt-neutro-gris-calido-solido {    color: var(--color-neutro-gris-calido) !important;}
+.color-txt-neutro-negro {    color: var(--color-neutro-negro) !important;}
+.color-txt-neutro-negro:hover {    background-color: var(--color-neutro-negro) !important;}
+.color-txt-neutro-negro-solido {    color: var(--color-neutro-negro) !important;}
+.color-txt-neutro-gris {    color: var(--color-neutro-gris) !important;}
+.color-txt-neutro-gris:hover {    background-color: var(--color-neutro-gris) !important;}
+.color-txt-neutro-gris-solido {    color: var(--color-neutro-gris) !important;}
+
+.color-txt-selecta-dorado {    color: var(--color-selecta-dorado) !important;}
+.color-txt-selecta-dorado:hover {    background-color: var(--color-selecta-dorado) !important;}
+.color-txt-selecta-dorado-solido {    color: var(--color-selecta-dorado) !important;}
+.color-txt-selecta-gris {    color: var(--color-selecta-gris) !important;}
+.color-txt-selecta-gris:hover {    background-color: var(--color-selecta-gris) !important;}
+.color-txt-selecta-gris-solido {    color: var(--color-selecta-gris) !important;}
+
+.color-txt-complementario-rosa {    color: var(--color-complementario-rosa) !important;}
+.color-txt-complementario-rosa:hover {    background-color: var(--color-complementario-rosa) !important;}
+.color-txt-complementario-rosa-solido {    color: var(--color-complementario-rosa) !important;}
+.color-txt-complementario-rojo {    color: var(--color-complementario-rojo) !important;}
+.color-txt-complementario-rojo:hover {    background-color: var(--color-complementario-rojo) !important;}
+.color-txt-complementario-rojo-solido {    color: var(--color-complementario-rojo) !important;}
+.color-txt-complementario-celeste {    color: var(--color-complementario-celeste) !important;}
+.color-txt-complementario-celeste:hover {    background-color: var(--color-complementario-celeste) !important;}
+.color-txt-complementario-celeste-solido {    color: var(--color-complementario-celeste) !important;}
+.color-txt-complementario-turquesa {    color: var(--color-complementario-turquesa) !important;}
+.color-txt-complementario-turquesa:hover {    background-color: var(--color-complementario-turquesa) !important;}
+.color-txt-complementario-turquesa-solido {    color: var(--color-complementario-turquesa) !important;}
+.color-txt-complementario-mostaza {    color: var(--color-complementario-mostaza) !important;}
+.color-txt-complementario-mostaza:hover {    background-color: var(--color-complementario-mostaza) !important;}
+.color-txt-complementario-mostaza-solido {    color: var(--color-complementario-mostaza) !important;}
+.color-txt-complementario-amarillo {    color: var(--color-complementario-amarillo) !important;}
+.color-txt-complementario-amarillo:hover {    background-color: var(--color-complementario-amarillo) !important;}
+.color-txt-complementario-amarillo-solido {    color: var(--color-complementario-amarillo) !important;}
+.color-txt-complementario-verde {    color: var(--color-complementario-verde) !important;}
+.color-txt-complementario-verde:hover {    background-color: var(--color-complementario-verde) !important;}
+.color-txt-complementario-verde-solido {    color: var(--color-complementario-verde) !important;}
+.color-txt-complementario-esmeralda {    color: var(--color-complementario-esmeralda) !important;}
+.color-txt-complementario-esmeralda:hover {    background-color: var(--color-complementario-esmeralda) !important;}
+.color-txt-complementario-esmeralda-solido {    color: var(--color-complementario-esmeralda) !important;}
+
+/* Background color + Text colors - Paleta de colores */
+
+.color-bg-principal-azul-txt-white-complementario-rosa-txt-white {    background-color: var(--color-principal-azul) !important; color: white !important;}
+.color-bg-principal-azul-txt-white-complementario-rosa-txt-white:hover {    background-color: var(--color-complementario-rosa) !important; color: white !important;}
+.color-bg-secundario-azul-txt-white-complementario-rosa-txt-white {    background-color: var(--color-secundario-azul) !important; color: white !important;}
+.color-bg-secundario-azul-txt-white-complementario-rosa-txt-white:hover {    background-color: var(--color-complementario-rosa) !important; color: white !important;}
+
+/*Clase custom Para tabs Plan Sueldo*/
+div.planSueldoTabs{
+    background-color: #172b4d!important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-pills .nav-link.planSueldoTabs {
+    background-color: #ccc!important;
+    border-left: 6px solid #009ADA!important;
+    color: #172b4d!important 
+}
+
+.nav-pills .nav-link.planSueldoTabs.active {
+    background-color: #131a45!important;
+    border-left: 6px solid rgb(255,67,81)!important;
+    color: white!important;
+}
+
+.nav-pills .nav-link.planSueldoTabs.active:hover {
+    background-color: #131a45!important;
+    border-left: 6px solid rgb(255,67,81)!important;
+    color: white!important;
+}
+
+.nav-pills .nav-link.planSueldoTabs:hover {
+    text-decoration: none;
+    color: rgb(255,67,81)!important;
+}
+
+ .planSueldoTabs >.scroll-tabs  {
+    padding-top: 15px;
+}
+
+div.planSueldoTabsGrey{
+    background-color: #eee !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-pills .nav-link.planSueldoTabsGrey {
+    background-color: #ccc !important;
+    border-left: 6px solid #009ADA!important;
+    color: #172b4d!important 
+}
+
+.nav-pills .nav-link.planSueldoTabsGrey.active {
+    background-color: #131a45!important;
+    border-left: 6px solid rgb(255,67,81)!important;
+    color: white!important;
+}
+
+.nav-pills .nav-link.planSueldoTabsGrey.active:hover {
+    background-color: #131a45!important;
+    border-left: 6px solid rgb(255,67,81)!important;
+    color: white!important;
+}
+
+.nav-pills .nav-link.planSueldoTabsGrey:hover {
+    text-decoration: none;
+    color: rgb(255,67,81)!important;
+}
+
+ .planSueldoTabsGrey >.scroll-tabs  {
+    padding-top: 15px;
+}
+
+.ContenedorTabsSinTabs > div > div > ul > li > a {
+    display:none;
+}
+
+/*Custom User Styles*/

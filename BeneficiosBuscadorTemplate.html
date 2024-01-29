@@ -1,0 +1,289 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+        <%@ taglib prefix="cs" uri="futuretense_cs/ftcs1_0.tld" %>
+            <%@ taglib prefix="ics" uri="futuretense_cs/ics.tld" %>
+                <%@ taglib prefix="render" uri="futuretense_cs/render.tld" %>
+                    <%@ taglib prefix="fragment" uri="futuretense_cs/fragment.tld" %>
+
+
+                        <cs:ftcs>
+                            <%-- Modulo/BeneficiosBuscadorTemplate --%>
+                                <%-- Record dependencies for the Template --%>
+                                    <ics:if condition='<%=ics.GetVar("tid")!=null%>'>
+                                        <ics:then>
+                                            <render:logdep cid='<%=ics.GetVar("tid")%>' c="Template" />
+                                        </ics:then>
+                                    </ics:if>
+
+                                    <c:if test='${not empty asset.Titulo or not empty asset.Imagen}'>
+                                        <section class="mc-banner-beneficios no-padding section-beneficios"
+                                            id="page-header">
+                                            <c:if test='${empty asset.Titulo}'>
+                                                <div class="row" id="main-title">
+                                                    <h1 class="TituloCategoria"></h1>
+                                                    <script>$(".TituloCategoria").html(validateParams().params.get("categoria"))</script>
+                                                </div>
+                                            </c:if>
+
+                                            <c:if test='${not empty asset.Imagen}'>
+                                                <div class="banner-header <c:if test='${!empty asset.Titulo}'>no-margin</c:if>"
+                                                    style="background-image: url('${imagen_asset.ImagenContainer_bloblink_}')">
+                                                </div>
+                                            </c:if>
+
+                                            <c:if test='${not empty asset.Titulo}'>
+                                                <div class="row" id="main-title">
+                                                    <h1>${asset.Titulo}</h1>
+                                                </div>
+                                            </c:if>
+                                        </section>
+                                    </c:if>
+
+                                    <!-- ***********   BUSCADOR     ***********  -->
+                                    <style>
+                                        .ui-menu {
+                                            max-height: 300px;
+                                            overflow-y: auto;
+                                            overflow-x: hidden;
+                                        }
+                                    </style>
+
+                                    <section class="section-beneficios" id="buscador-beneficios">
+                                        <div class="container">
+                                            <form class="row" <c:if test="${empty asset.urlExterna}">
+                                                action="javascript:sendForm()"</c:if>
+                                                <c:if test="${not empty asset.urlExterna}">action="${asset.urlExterna}"
+                                                </c:if>>
+                                                <label>
+                                                    <select name="ubicacion" id="ubicacion">
+                                                        <option value="CAPITAL FEDERAL">CAPITAL FEDERAL</option>
+                                                        <option value="BUENOS AIRES">BUENOS AIRES</option>
+                                                        <option value="CATAMARCA">CATAMARCA</option>
+                                                        <option value="CHACO">CHACO</option>
+                                                        <option value="CHUBUT">CHUBUT</option>
+                                                        <option value="CORDOBA">CORDOBA</option>
+                                                        <option value="CORRIENTES">CORRIENTES</option>
+                                                        <option value="ENTRE RIOS">ENTRE RIOS</option>
+                                                        <option value="FORMOSA">FORMOSA</option>
+                                                        <option value="JUJUY">JUJUY</option>
+                                                        <option value="LA PAMPA">LA PAMPA</option>
+                                                        <option value="LA RIOJA">LA RIOJA</option>
+                                                        <option value="MENDOZA">MENDOZA</option>
+                                                        <option value="MISIONES">MISIONES</option>
+                                                        <option value="NEUQUEN">NEUQUEN</option>
+                                                        <option value="RIO NEGRO">RIO NEGRO</option>
+                                                        <option value="SALTA">SALTA</option>
+                                                        <option value="SAN JUAN">SAN JUAN</option>
+                                                        <option value="SAN LUIS">SAN LUIS</option>
+                                                        <option value="SANTA CRUZ">SANTA CRUZ</option>
+                                                        <option value="SANTA FE">SANTA FE</option>
+                                                        <option value="SANTIAGO DEL ESTERO">SANTIAGO DEL ESTERO</option>
+                                                        <option value="TIERRA DEL FUEGO">TIERRA DEL FUEGO</option>
+                                                        <option value="TUCUMAN">TUCUMAN</option>
+                                                    </select>
+                                                </label>
+
+                                                <label>
+                                                    <select name="categoria" id="categoria">
+                                                        <c:forEach items="${asset.LabelsCamposBusqueda}" var="items"
+                                                            varStatus="loop">
+                                                            <option value="${items}">${items}</option>
+                                                        </c:forEach>
+                                                    </select>
+                                                </label>
+                                                <label>
+                                                    <input type="text" name="beneficios"
+                                                        placeholder="Buscar ahorros y beneficios" id="buscar" />
+                                                </label>
+
+                                                <a class="mas-filtros" data-toggle="collapse" href="#mas-filtros"
+                                                    role="button" aria-expanded="false" aria-controls="mas-filtros">
+                                                    M&Aacute;S FILTROS
+                                                    <i><img src="/imagen/filtros.png" alt="Mas filtros"></i>
+                                                </a>
+
+                                                <div class="collapse" id="mas-filtros">
+                                                    <label><input type="text" name="localidad" placeholder="Localidad"
+                                                            value="" id="localidad" /></label>
+
+                                                    <label>
+                                                        <select name="dia-semana" id="dia-semana">
+
+                                                            <option value="7">Todos los d&iacute;as</option>
+                                                            <option value="8">Hoy</option>
+                                                            <option value="1">Lunes </option>
+                                                            <option value="2">Martes </option>
+                                                            <option value="3">Mi&eacute;rcoles </option>
+                                                            <option value="4">Jueves </option>
+                                                            <option value="5">Viernes </option>
+                                                            <option value="6">S&aacute;bado </option>
+                                                            <option value="0">Domingo </option>
+
+                                                        </select>
+
+                                                    </label>
+                                                    <label>
+                                                        <select name="tarjeta" id="tarjeta">
+                                                            <option value="">Todas las Tarjetas</option>
+                                                            <option value="TD">Tarjeta de Debito</option>
+                                                            <option value="TC">Tarjeta de Cr&eacute;dito</option>
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                                <input type="submit" value="Buscar" class="btn bg-color-18" />
+                                            </form>
+                                        </div>
+                                    </section>
+
+                                    <!-- ***********  FIN DE  BUSCADOR       ***********  -->
+
+                                    <script defer>
+
+                                        //Inicializa Valiables de servicios
+
+                                        urlServicios.url_servicio_categoria = "${asset.url_categorias}";
+                                        urlServicios.url_servicio_localidades = "${asset.url_localidades}";
+                                        urlServicios.url_servicio_predictivo = "${asset.URLAutocomplete}";
+                                        urlServicios.url_servicio_client_id = " ${asset.Endpoint_ClientID}";
+
+                                        //Setea un default
+                                        if (provinciaActual == null) {
+                                            setProvincia('BuenosAires');
+                                        }
+
+                                        // Inserta Categorias en combo 
+
+                                        let insertaCategorias = (data) => {
+
+                                            let categorias = $('#categoria');
+                                            let principal = "", secundarias = "";
+                                            let urlParams = validateParams();
+                                            if (urlParams.is) {
+
+                                                secundarias += ('<option value="All">Todos los rubros</option>');
+                                                for (let i in data) {
+
+                                                    if (data[i].applyOnGeneral == true) {
+                                                        if (data[i].displayName == urlParams.params.get("categoria")) {
+                                                            principal += '<option value="' + data[i].displayName + '">' + data[i].displayName + '</option>';
+                                                        } else {
+                                                            secundarias += '<option value="' + data[i].displayName + '">' + data[i].displayName + '</option>';
+                                                        }
+                                                    }
+
+                                                }
+
+                                            } else {
+
+                                                principal += ('<option value="All">Todos los rubros</option>');
+                                                for (let i in data) {
+                                                    secundarias += '<option value="' + data[i].displayName + '">' + data[i].displayName + '</option>';
+                                                }
+                                            }
+                                            categorias.empty();
+                                            categorias.append(principal + secundarias);
+                                        }
+
+                                        //Se ejecuta en pagina de resultados
+                                        let sendForm = () => {
+                                            let filters = {
+                                                is: true,
+                                                params: {
+
+                                                    categoria: $("#categoria").val(),
+                                                    beneficios: $("#buscar").val(),
+                                                    localidad: $("#localidad").val(),
+                                                    dia: $("#dia-semana").val(),
+                                                    tarjeta: $("#tarjeta").val()
+                                                }
+                                            }
+                                            initBeneficios("main-beneficios-container", filters);
+                                        }
+
+                                        //Obtiene Categorias
+                                        getCategorias().then(res => { return categorias = res; });
+
+                                        //Obtiene Localidades por provincia
+                                        getLocalidades().then(res => { return localidades = res; });
+
+                                        //Ejecuta Inserta Categorias
+                                        insertaCategorias(categorias);
+
+                                        // Inserta Ubicación Actual
+                                        $("#ubicacion").val(provinciaActual.provinceNeutral);
+
+                                        // Inserta Pedicitivo Provincias
+                                        /*$('#ubicacion').autocomplete({
+                                            source: getProvincias()
+                                        });*/
+
+
+                                        // Inserta Predictivo Localidades
+                                        $("#localidad").autocomplete({
+                                            source: getLocalidadName()
+                                        });
+
+                                        //Inserta Predictivo Beneficios
+
+                                        $("#buscar").autocomplete({
+
+                                            source: (request, response) => {
+
+                                                let url = urlServicios.url_servicio_predictivo + $("#buscar").val() + "&province=" + provinciaActual.provinceIsoCode;
+
+                                                $.ajax({
+                                                    "async": true,
+                                                    "crossDomain": true,
+                                                    "url": url,
+                                                    "method": "GET",
+                                                    "headers": {
+                                                        "Accept": "application/json",
+                                                        "Cache-Control": "no-cache",
+                                                        "x-ibm-client-id": urlServicios.url_servicio_client_id
+                                                    }
+                                                }).done(function (data) {
+                                                    response(data);
+                                                });
+                                            }
+                                        });
+
+                                        $('#ubicacion').change(() => {
+                                            setProvincia(getProvinciaKey($("#ubicacion").val()));
+                                            getLocalidades().then(res => { return localidades = res; });
+                                            if ($('.location span').length > 0) {
+                                                try {
+                                                    $('.location span').text($("#ubicacion").val());
+                                                } catch (e) { }
+                                            }
+
+                                            $("#localidad").autocomplete({
+                                                source: getLocalidadName()
+                                            });
+
+                                            $("#buscar").val("");
+                                            $("#buscar").autocomplete({
+                                                source: (request, response) => {
+                                                    let url = urlServicios.url_servicio_predictivo + $("#buscar").val() + "&province=" + provinciaActual.provinceIsoCode;
+                                                    $.ajax({
+
+                                                        "async": true,
+                                                        "crossDomain": true,
+                                                        "url": url,
+                                                        "method": "GET",
+                                                        "headers": {
+                                                            "Accept": "application/json",
+                                                            "Cache-Control": "no-cache",
+                                                            "x-ibm-client-id": urlServicios.url_servicio_client_id
+
+                                                        }
+
+                                                    }).done(function (data) {
+                                                        response(data);
+                                                    });
+                                                }
+                                            });
+                                        });
+
+                                    </script>
+
+                        </cs:ftcs>

@@ -1,0 +1,615 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/* OPERACIONES SIMPLES - JULIO 2020*/
+
+
+/*-- resets operaciones --*/
+
+.bg-color-blue {
+    background-color: #131A45;
+}
+
+.bg-color-pink {
+    background-color: rgb(255,67,81);
+}
+
+.bg-color-sky {
+    background-color: #009ADA;
+}
+
+.bg-color-skyblue {
+    background-color: #3C92CA;
+}
+
+.bg-color-lightskyblue {
+    background-color: #70B7E5;
+}
+
+.bg-color-gray {
+    background-color: #868589;
+}
+
+.bg-color-white {
+    background-color: #FFFFFF;
+}
+
+.bg-color-lightgreen {
+    background-color: #4BA5A6;
+}
+
+.bg-color-green {
+    background-color: #315763;
+}
+
+.bg-color-black {
+    background-color: #000000;
+}
+
+.bg-color-agrogreen {
+    background-color: #317D3D;
+}
+
+.bg-color-conocenos {
+    background-color: #0193CF;
+}
+
+
+header {
+    font-family: "Titillium Web", sans-serif!important;
+}
+
+header #margin-top {
+    color: #fff;
+    height: 46px;
+    background: rgb(17, 43, 76);
+    transition: all .8s ease-in-out!important;
+    background: linear-gradient(360deg, rgba(17, 43, 76, 1) 6%, rgba(8, 20, 37, 1) 100%);
+    transition: all .8s ease-in-out!important
+}
+
+header #margin-top #fixed-brand {
+    display: none
+}
+
+header #margin-top #margin-links {
+    display: inline-flex
+}
+
+header #margin-top #margin-links a:first-child::after {
+    content: '';
+    margin: 0px;
+    background-color: #fff;
+    width: 2px;
+    height: 25px;
+    float: right;
+    margin-left: 35px;
+    margin-top: -5px;
+}
+
+@media (max-width: 1191px) {
+    header #margin-top {
+        color: #fff;
+        height: auto;
+        transition: all .5s ease
+    }
+    header #margin-top a {
+        /*padding:5px!important*/
+    }
+}
+
+header #margin-top a {
+    color: #fff;
+    padding: 15px;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 12px;
+}
+
+header #margin-top #solapas {
+    display: inline-table;
+    transition: all .8s ease-in-out!important
+}
+
+header #margin-top #solapas > a {
+    padding: 5px;
+    padding-right: 10px;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    float: right;
+    display: table-row;
+    margin: 0 3px;
+    font-size: 12px;
+    margin-bottom: -10px;
+    text-align: left;
+    vertical-align: middle;
+    height: 60px;
+    transition: all .8s ease-in-out!important
+}
+
+header #margin-top #solapas > a:first-child {
+    margin-right: 0
+}
+
+header #margin-top #solapas > a i {
+    float: left;
+    display: row;
+}
+
+header #margin-top #solapas > a i img {
+    height: 46px
+}
+
+header #margin-top #solapas > a span {
+    float: left;
+    line-height: 115%;
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+header #margin-top #solapas > div > button {
+    padding: 5px;
+    padding-right: 10px;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    float: right;
+    display: table-row;
+    margin: 0 3px;
+    font-size: 12px;
+    margin-bottom: -10px;
+    text-align: left;
+    vertical-align: middle;
+    height: 60px;
+    transition: all .8s ease-in-out!important;
+	border: 0
+}
+
+header #margin-top #solapas > div > button:first-child {
+    margin-right: 0
+}
+
+header #margin-top #solapas > div > button i {
+    float: left;
+    display: row;
+}
+
+header #margin-top #solapas > div > button i img {
+    height: 46px
+}
+
+header #margin-top #solapas > div > button span {
+    float: left;
+    line-height: 115%;
+    padding-top: 10px;
+    font-weight: normal;
+    font-family: "Titillium Web", sans-serif!important;
+}
+
+#logo {
+    padding: 20px 0
+}
+
+
+/*navegacion primaria*/
+
+#brand-header {
+    transition: all .8s ease-in-out!important;
+}
+
+.brand .navbar-brand img {
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+.brand .navbar-brand img#logo-min {
+    display: none
+}
+
+.brand nav {
+    padding-top: 25px;
+    padding-bottom: 25px
+}
+
+.brand nav ul {
+    padding: 0;
+    margin: 0
+}
+
+.brand nav ul li {
+    list-style: none;
+    display: inline-flex;
+    border-left: 1px solid #eee;
+}
+
+.brand nav ul li:first-child {
+    border-left: none
+}
+
+.brand nav ul li.active {
+    font-weight: bold
+}
+
+.brand nav li a {
+    font-size: 1em;
+    padding: .5em .45em;
+    color: #131A45;
+    transition: all .4s ease-out;
+    margin-left: 3px
+}
+
+.brand nav li a:hover {
+    padding: .5em .4em;
+    background-color: #eeeeee;
+    text-decoration: none
+}
+
+.brand nav li.active {
+    font-weight: bold
+}
+
+.brand nav li.featured {
+    background-color: #131A45;
+    padding: 2px 10px;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 18px;
+    margin-left: -15px;
+}
+
+.brand nav li.featured.bg-color-pink {
+    background-color: rgb(255,67,81);
+    padding: 2px 10px;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 18px;
+    margin-left: -15px;
+}
+
+.brand nav li.featured a {
+    color: #fff!important;
+    font-size: 10px;
+    border: none
+}
+
+.brand nav li.featured a:hover {
+    background-color: transparent!important
+}
+
+.brand nav li.featured:hover {
+    background-color: #3C92CA
+}
+
+
+/*navegacion contextual*/
+
+.context-menu .navbar-nav {
+    flex-direction: row;
+    transition: all .8s ease-in-out!important
+}
+
+.context-menu .navbar-nav li {
+    flex-direction: row
+}
+
+.context-menu .navbar-nav .nav-link {
+    padding: 5px .5em!important;
+    border-right: 1px solid rgba(255, 255, 255, .4);
+    padding-left: 0;
+    font-size: 13px;
+    color: #ffffff!important;
+}
+
+.context-menu .navbar-light .navbar-nav .nav-link:focus {
+    color: #ffffff;
+    font-weight: 600
+}
+
+.context-menu .nav-item:last-child .dropdown-menu {
+    right: 0;
+    left: auto
+}
+
+#tarjetasDropdown {
+
+display: block ruby;
+
+}
+.context-menu .dropdown-menu {
+    width: max-content!important;
+    border-radius: 0px 0px 20px 20px;
+    top: 35px;
+}
+
+.context-menu .dropdown-item {
+    font-size: 11px;
+}
+
+/*Saco 20px que dejaban un espacio blanco debajo del menu*/
+.context-menu .row {
+    margin-bottom: 0px
+}
+
+.context-menu .nav-title,
+.context-menu .nav-subtitle {
+    font-weight: 600;
+	cursor: pointer;
+}
+
+/*.context-menu .nav-title:after {
+    content: '';
+    display: block;
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #131A45;
+}*/
+/*Linea horizontal*/
+.hl {
+    content: '';
+    display: block;
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 23px;
+    border-bottom: 1px solid #131A45;
+}
+
+.bg-color-lightskyblue.context-menu .nav-title:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 8px;
+    display: inline-block;
+    margin-right: 10px;
+    border-color: transparent transparent transparent #70B7E5;
+    content: '';
+}
+
+.bg-color-blue.context-menu .nav-title:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 8px;
+    display: inline-block;
+    margin-right: 10px;
+    border-color: transparent transparent transparent #131A45;
+    content: '';
+}
+
+.bg-color-lightgreen.context-menu .nav-title:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 8px;
+    display: inline-block;
+    margin-right: 10px;
+    border-color: transparent transparent transparent #4BA5A6;
+    content: '';
+}
+
+.bg-color-lightskyblue.context-menu .nav-subtitle:before,
+.bg-color-blue.context-menu .nav-title:before,
+.bg-color-lightgreen.context-menu .nav-title:before {
+    width: 10px;
+    height: 9px;
+    display: inline-block;
+    margin-right: 10px;
+    content: '';
+}
+
+.bg-color-lightskyblue.context-menu .nav-subtitle:before {
+    background: url("/imagen/pointer-outline-lightskyblue.png") no-repeat;
+    background-size: contain
+}
+
+.bg-color-blue.context-menu .nav-title:before {
+    background: url("/imagen/pointer-outline-blue.png") no-repeat;
+    background-size: contain
+}
+
+.bg-color-lightgreen.context-menu .nav-title:before {
+    background: url("/imagen/pointer-outline-lightgreen.png") no-repeat;
+    background-size: contain
+}
+
+
+/** MEN? FIJO **/
+
+.fixed-header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 20;
+    transition: all .8s ease-in-out!important
+}
+
+.fixed-header .brand {
+    display: none
+}
+
+.fixed-header #margin-top {
+    height: auto;
+    transition: all .8s ease-in-out!important
+}
+
+.fixed-header #margin-top #solapas > a {
+    padding: 8px 20px!important;
+    border-radius: 0;
+    color: #fff;
+    float: right;
+    display: table-row;
+    margin: 0 3px;
+    font-size: 10px;
+    /* margin-bottom: -10px; */
+    vertical-align: middle;
+    font-weight: normal;
+    text-align: center;
+    height: 100%;
+}
+
+.fixed-header #margin-top #solapas > a span {
+    padding-top: 15px;
+    font-weight: normal
+}
+
+.fixed-header #margin-top #solapas > a img {
+    display: none
+}
+
+.fixed-header #margin-top #solapas > div > button {
+    padding: 8px 20px!important;
+    border-radius: 0;
+    color: #fff;
+    float: right;
+    display: table-row;
+    margin: 0 3px;
+    font-size: 10px;
+    /* margin-bottom: -10px; */
+    vertical-align: middle;
+    font-weight: normal;
+    text-align: center;
+    height: 70px;
+}
+
+.fixed-header #margin-top #solapas > div > button span {
+    padding-top: 5px;
+    font-weight: normal;
+    font-family: "Titillium Web", sans-serif!important;
+}
+
+.fixed-header #margin-top #solapas > div > button img {
+    display: none
+}
+
+.fixed-header #margin-top #fixed-brand {
+    display: inline-flex;
+    /*margin-top:-10px;*/
+    transition: all .8s ease-in-out!important
+}
+
+.fixed-header #margin-top .btn-white {
+    background: #fff;
+    color: #131A45;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 5px 15px;
+    height: fit-content;
+    max-height: 30px;
+}
+
+.fixed-header #margin-top #margin-links {
+    display: none
+}
+
+
+/**  RESETS NAVEGACI?N OFFCANVAS **/
+
+.mc-accesos-mobile {
+    margin-top: 35px;
+    padding: 20px 15px!important
+}
+
+.mc-accesos-mobile .btn i {
+    display: block;
+    clear: both;
+}
+
+.mc-accesos-mobile .btn {
+    font-size: .7em!important;
+    text-align: center;
+    height: 110px;
+    border-radius: 10px;
+    margin: 5px;
+    color: #fff;
+    padding: 0!important
+}
+
+header .mc-top-new-menu-container:not(.hamburguer-opened) {
+    background: #131A45
+}
+
+body:not(.ms-black) header .mc-top-new-menu-container.hamburguer-opened {
+    background-color: rgba(7, 51, 87, .94);
+}
+
+body:not(.ms-black) header .mc-hamburguer-container .mc-mobile-dropdown.navbar-nav>li.has-children a,
+body:not(.ms-black) header .mc-hamburguer-container .mc-mobile-dropdown.navbar-nav>li.has-children label {
+    background-color: transparent;
+}
+
+.mc-hamburguer-container {
+    margin-top: -15px;
+}
+
+.mc-top-new-menu-container {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden
+}
+
+header .mc-hamburguer-container .mc-mobile-dropdown.navbar-nav>li.has-children a:not(label),
+body:not(.ms-black) header .mc-hamburguer-container .mc-mobile-dropdown.navbar-nav>li.has-children>ul li.has-children label {
+    border: none!important
+}
+
+header .mc-top-new-menu-container .mc-top-menu .navbar .navbar-nav {
+    padding-top: 25px
+}
+
+.mc-hamburguer-container .mc-mobile-dropdown li.mc-hamburguer ul {
+    padding-left: 15px
+}
+
+.mc-hamburguer-container .mc-mobile-dropdown.navbar-nav>li.has-children label {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 14px;
+    padding: 3px 10px 3px 10px;
+}
+
+.mc-hamburguer-container .mc-mobile-dropdown.navbar-nav>li.has-children ul li a {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 12px;
+    padding: 3px 10px 3px 10px;
+}
+
+
+header #margin-top .mc-hamburguer-container a {
+    color: #fff;
+    padding: 5px;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+}
+
+.mc-hamburguer-container .mc-mobile-dropdown label::after {
+    background: url("/imagen/menu-arrow-mobile-down.png")no-repeat;
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    right: 15px;
+    transition-timing-function: linear, ease;
+    transition-duration: 1s, 5s, 5s, 1s;
+    transform: translateY(55%);
+    top: 0;
+}
+
+.mc-hamburguer-container .mc-mobile-dropdown.navbar-nav>li.has-children>ul li.has-children label::after {
+    background: url("/imagen/menu-arrow-mobile-down-outline.png")no-repeat;
+}
+
+.mc-hamburguer-container .mc-mobile-dropdown input[type=checkbox]:checked+label::after {
+    transform: rotate(180deg) scaleX(-1);
+}
+
+.mc-hamburguer-container .mc-mobile-dropdown.navbar-nav>li.has-children>ul li.has-children ul {
+    padding-left: 40px
+}
